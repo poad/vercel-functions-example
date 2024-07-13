@@ -52,7 +52,7 @@ importers:
         specifier: ^3.4.4
         version: 3.4.4(ts-node@10.9.1(@types/node@14.18.33)(typescript@5.5.3))
       vercel:
-        specifier: ^32.3.0
+        specifier: ^32.7.2
         version: 32.7.2
 
 packages:
