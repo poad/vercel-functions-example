@@ -3,4 +3,7 @@ import 'flowbite';
 
 import { TodoList } from './todo-list';
 
-render(() => <TodoList />, document.getElementById('root'));
+const doc = document.getElementById('root');
+if (doc) {
+  render(() => <TodoList />, doc);
+}

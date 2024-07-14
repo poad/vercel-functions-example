@@ -1,12 +1,20 @@
-import { ErrorBoundary, For, Show, Suspense, createResource, createSignal } from 'solid-js';
+import {
+  ErrorBoundary,
+  For,
+  JSX,
+  Show,
+  Suspense,
+  createResource,
+  createSignal,
+} from 'solid-js';
+import { ErrorAlert } from './components/ui/ErrorAlert';
 
 type Todo = { id: number; text: string; completed: boolean };
 
-export const TodoList = () => {
+export function TodoList(): JSX.Element {
   const [data] = createResource<{ message: string }>(() =>
     fetch('/api/hello').then((resp) => resp.json())
   );
-
   let input!: HTMLInputElement;
   let todoId = 0;
   const [todos, setTodos] = createSignal<Todo[]>([]);
@@ -41,9 +49,13 @@ export const TodoList = () => {
             <Show when={!data.loading && data()}>
               <span>{data()?.message}</span>
             </Show>
+            <Show when={!data.loading && data.error}>
+              <ErrorAlert>{data.error}</ErrorAlert>
+            </Show>
           </Suspense>
         </ErrorBoundary>
       </p>
+
       <For each={todos()}>
         {(todo) => {
           const { id, text } = todo;

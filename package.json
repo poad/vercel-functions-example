@@ -15,10 +15,12 @@
   },
   "dependencies": {
     "@hono/node-server": "^1.12.0",
+    "@vercel/postgres": "^0.9.0",
     "flowbite": "^2.4.1",
     "hono": "^4.4.13"
   },
   "devDependencies": {
+    "@hono/vite-dev-server": "^0.13.1",
     "@solidjs/testing-library": "^0.8.8",
     "@stylistic/eslint-plugin": "^2.3.0",
     "@stylistic/eslint-plugin-js": "^2.3.0",
