@@ -1,5 +1,5 @@
 name: Pull Request Auto Merge
- 
+
 on:
   pull_request:
     branches:
@@ -10,17 +10,18 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       id-token: write
-      contents: read
-        
+      contents: write
+      pull-requests: write
+      checks: write
+
     if: github.actor != 'dependabot[bot]'
 
     steps:
     - name: Pull request auto merge enabler
       if: github.event_name == 'pull_request'
-      uses: poad/github-pull-request-auto-merge-enable-action@v2
-      with:
-        pull_request_number: ${{ github.event.pull_request.number }}
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        repository: ${{ github.event.repository.name }}
-        owner: ${{ github.repository_owner }}
-        merge_method: SQUASH
+      env:
+        PR_URL: ${{github.event.pull_request.html_url}}
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      run: |
+        gh pr review --approve "$PR_URL"
+        gh pr merge --auto --squash "$PR_URL"
