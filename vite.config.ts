@@ -3,20 +3,12 @@
 
 import { defineConfig } from 'vite';
 import solidPlugin from 'vite-plugin-solid';
-// import devServer from '@hono/vite-dev-server';
-import { visualizer } from 'rollup-plugin-visualizer';
 
 export default defineConfig({
   plugins: [
     solidPlugin({
       ssr: false,
     }),
-    // devServer({
-    //   entry: './api/[[...route]]/route.ts',
-    //   // include: [/^\/api/],
-    //   exclude: ['./src/**'],
-    // }),
-    !('VERCEL' in process.env) && visualizer(),
   ],
   test: {
     environment: 'jsdom',
