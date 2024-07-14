@@ -1,10 +1,10 @@
-import { For, Show, createResource, createSignal } from 'solid-js';
+import { ErrorBoundary, For, Show, Suspense, createResource, createSignal } from 'solid-js';
 
-type Todo = { id: number, text: string, completed: boolean };
+type Todo = { id: number; text: string; completed: boolean };
 
 export const TodoList = () => {
   const [data] = createResource<{ message: string }>(() =>
-    fetch('/api/hello').then((resp) => resp.json()),
+    fetch('/api/hello').then((resp) => resp.json())
   );
 
   let input!: HTMLInputElement;
@@ -14,8 +14,10 @@ export const TodoList = () => {
     setTodos([...todos(), { id: ++todoId, text, completed: false }]);
   };
   const toggleTodo = (id: number) => {
-    setTodos(todos().map(todo => 
-      todo.id === id ? { ...todo, completed: !todo.completed } : todo)
+    setTodos(
+      todos().map((todo) =>
+        todo.id === id ? { ...todo, completed: !todo.completed } : todo
+      )
     );
   };
 
@@ -34,23 +36,33 @@ export const TodoList = () => {
         </button>
       </div>
       <p>
-        <Show when={!data.loading && data()}>
-          <span>{data()?.message}</span>
-        </Show>
+        <ErrorBoundary fallback={<div>error...</div>}>
+          <Suspense fallback={<div>loading...</div>}>
+            <Show when={!data.loading && data()}>
+              <span>{data()?.message}</span>
+            </Show>
+          </Suspense>
+        </ErrorBoundary>
       </p>
       <For each={todos()}>
-        {(todo) => {          
+        {(todo) => {
           const { id, text } = todo;
-          return <div>
-            <input
-              type="checkbox"
-              checked={todo.completed}
-              onchange={[toggleTodo, id]}
-            />
-            <span
-              style={{ 'text-decoration': todo.completed ? 'line-through' : 'none' }}
-            >{text}</span>
-          </div>;
+          return (
+            <div>
+              <input
+                type="checkbox"
+                checked={todo.completed}
+                onchange={[toggleTodo, id]}
+              />
+              <span
+                style={{
+                  'text-decoration': todo.completed ? 'line-through' : 'none',
+                }}
+              >
+                {text}
+              </span>
+            </div>
+          );
         }}
       </For>
     </>
