@@ -9,15 +9,15 @@ export const TodoList = () => {
 
   let input!: HTMLInputElement;
   let todoId = 0;
-  const [todos, setTodos] = createSignal<Todo[]>([])
+  const [todos, setTodos] = createSignal<Todo[]>([]);
   const addTodo = (text: string) => {
     setTodos([...todos(), { id: ++todoId, text, completed: false }]);
-  }
+  };
   const toggleTodo = (id: number) => {
     setTodos(todos().map(todo => 
       todo.id === id ? { ...todo, completed: !todo.completed } : todo)
     );
-  }
+  };
 
   return (
     <>
@@ -27,7 +27,7 @@ export const TodoList = () => {
           onClick={() => {
             if (!input.value.trim()) return;
             addTodo(input.value);
-            input.value = "";
+            input.value = '';
           }}
         >
           Add Todo
@@ -35,7 +35,7 @@ export const TodoList = () => {
       </div>
       <p>
         <Show when={!data.loading && data()}>
-            <span>{data()?.message}</span>
+          <span>{data()?.message}</span>
         </Show>
       </p>
       <For each={todos()}>
@@ -48,11 +48,11 @@ export const TodoList = () => {
               onchange={[toggleTodo, id]}
             />
             <span
-              style={{ "text-decoration": todo.completed ? "line-through" : "none" }}
+              style={{ 'text-decoration': todo.completed ? 'line-through' : 'none' }}
             >{text}</span>
-          </div>
+          </div>;
         }}
       </For>
     </>
   );
-}
+};

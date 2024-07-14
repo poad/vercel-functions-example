@@ -7,26 +7,37 @@
     "serve": "vite preview",
     "test": "vitest run",
     "deploy:preview": "vercel deploy --prebuilt",
-    "deploy": "vercel"
+    "deploy": "vercel",
+    "eslint:check": "eslint",
+    "eslint:fix": "eslint --fix",
+    "lint": "pnpm run --parallel /^.*:check$/",
+    "lint-fix": "pnpm run /^.*:fix$/"
   },
   "dependencies": {
     "@hono/node-server": "^1.12.0",
-    "@solidjs/testing-library": "^0.8.8",
-    "@testing-library/jest-dom": "^6.4.6",
     "flowbite": "^2.4.1",
-    "hono": "^4.4.13",
-    "jsdom": "^24.1.0",
-    "typescript": "^5.5.3",
-    "vite": "^5.3.3",
-    "vite-plugin-solid": "^2.10.2",
-    "vitest": "^2.0.2"
+    "hono": "^4.4.13"
   },
   "devDependencies": {
+    "@solidjs/testing-library": "^0.8.8",
+    "@stylistic/eslint-plugin": "^2.3.0",
+    "@stylistic/eslint-plugin-js": "^2.3.0",
+    "@stylistic/eslint-plugin-plus": "^2.3.0",
+    "@stylistic/eslint-plugin-ts": "^2.3.0",
+    "@testing-library/jest-dom": "^6.4.6",
     "autoprefixer": "^10.4.19",
+    "eslint": "^9.7.0",
+    "eslint-plugin-solid": "^0.14.1",
+    "jsdom": "^24.1.0",
     "postcss": "^8.4.39",
     "solid-js": "^1.8.18",
     "tailwindcss": "^3.4.4",
-    "vercel": "^34.3.1"
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^7.16.0",
+    "vercel": "^34.3.1",
+    "vite": "^5.3.3",
+    "vite-plugin-solid": "^2.10.2",
+    "vitest": "^2.0.2"
   },
   "engines": {
     "node": "20.x"
