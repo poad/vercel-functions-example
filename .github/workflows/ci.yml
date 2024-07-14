@@ -30,5 +30,8 @@ jobs:
             - recursive: true
               args: [--no-frozen-lockfile, --strict-peer-dependencies]
 
+      - name: lint
+        run: pnpm lint
+
       - name: Build
         run: pnpm build
