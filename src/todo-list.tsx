@@ -7,26 +7,53 @@ import {
   createResource,
   createSignal,
 } from 'solid-js';
+import { hc } from 'hono/client';
+import { FadeLoader } from './components/ui/FadeLoader';
 import { ErrorAlert } from './components/ui/ErrorAlert';
+import { TrashBinIcon } from './components/ui/Icons/TrashBin';
+import type { AppType } from '../api/';
 
-type Todo = { id: number; text: string; completed: boolean };
+function Message() {
+  const client = hc<AppType>('/');
+  const [data] = createResource<{ message: string }>(() =>
+    client.api.hello
+      .$post({ json: { message: 'Hono' } })
+      .then((res) => res.json())
+  );
+  return (
+    <ErrorBoundary fallback={<ErrorAlert>{data.error}</ErrorAlert>}>
+      <Suspense fallback={<div>loading...</div>}>
+        <Show when={!data.loading && data()}>
+          <span>{data()?.message}</span>
+        </Show>
+      </Suspense>
+    </ErrorBoundary>
+  );
+}
 
 export function TodoList(): JSX.Element {
-  const [data] = createResource<{ message: string }>(() =>
-    fetch('/api/hello').then((resp) => resp.json())
-  );
+  const client = hc<AppType>('/');
+  const [data, { refetch }] = createResource<{
+    items: { id: string; content: string }[];
+  }>(() => client.api.todo.$get().then((res) => res.json()));
+
+  const [text, setText] = createSignal<string>();
+
+  createResource(text, (text?: string) => {
+    if (!text) return;
+    client.api.todo.$put({ json: { content: text } }).then(async () => {
+      refetch();
+    });
+  });
+
+  async function deleteTodo(id: string) {
+    if (!id) return;
+    client.api.todo.$delete({ json: { id } }).then(() => refetch());
+  }
+
   let input!: HTMLInputElement;
-  let todoId = 0;
-  const [todos, setTodos] = createSignal<Todo[]>([]);
   const addTodo = (text: string) => {
-    setTodos([...todos(), { id: ++todoId, text, completed: false }]);
-  };
-  const toggleTodo = (id: number) => {
-    setTodos(
-      todos().map((todo) =>
-        todo.id === id ? { ...todo, completed: !todo.completed } : todo
-      )
-    );
+    setText(() => text);
   };
 
   return (
@@ -44,39 +71,37 @@ export function TodoList(): JSX.Element {
         </button>
       </div>
       <p>
-        <ErrorBoundary fallback={<div>error...</div>}>
-          <Suspense fallback={<div>loading...</div>}>
-            <Show when={!data.loading && data()}>
-              <span>{data()?.message}</span>
-            </Show>
-            <Show when={!data.loading && data.error}>
-              <ErrorAlert>{data.error}</ErrorAlert>
-            </Show>
-          </Suspense>
-        </ErrorBoundary>
+        <Message />
       </p>
 
-      <For each={todos()}>
-        {(todo) => {
-          const { id, text } = todo;
-          return (
+      <ErrorBoundary fallback={<ErrorAlert>{data.error}</ErrorAlert>}>
+        <Suspense
+          fallback={
             <div>
-              <input
-                type="checkbox"
-                checked={todo.completed}
-                onchange={[toggleTodo, id]}
-              />
-              <span
-                style={{
-                  'text-decoration': todo.completed ? 'line-through' : 'none',
-                }}
-              >
-                {text}
-              </span>
+              <FadeLoader />
             </div>
-          );
-        }}
-      </For>
+          }
+        >
+          <Show when={!data.loading && data()}>
+            <ul>
+              <For each={data()?.items}>
+                {(item) => (
+                  <li>
+                    {item.content}{' '}
+                    <button
+                      onClick={async () => {
+                        await deleteTodo(item.id);
+                      }}
+                    >
+                      <TrashBinIcon />
+                    </button>
+                  </li>
+                )}
+              </For>
+            </ul>
+          </Show>
+        </Suspense>
+      </ErrorBoundary>
     </>
   );
-};
+}
