@@ -15,6 +15,9 @@ export default tseslint.config(
   {
     files: ['src/**/*.{ts,tsx}', 'api/**/*.ts'],
   },
+  eslint.configs.recommended,
+  ...tseslint.configs.strict,
+  ...tseslint.configs.stylistic,
   {
     rules: {
       quotes: ['error', 'single'],
@@ -22,8 +25,6 @@ export default tseslint.config(
       indent: ['error', 2],
     },
   },
-  eslint.configs.recommended,
-  ...tseslint.configs.recommended,
   {
     plugins: {
       solid,
