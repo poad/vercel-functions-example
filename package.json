@@ -37,7 +37,7 @@
     "tailwindcss": "^3.4.7",
     "typescript": "^5.5.4",
     "typescript-eslint": "^7.18.0",
-    "vercel": "^35.2.1",
+    "vercel": "^35.2.2",
     "vite": "^5.3.5",
     "vite-plugin-solid": "^2.10.2",
     "vitest": "^2.0.4"
