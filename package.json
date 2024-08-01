@@ -23,10 +23,10 @@
   },
   "devDependencies": {
     "@solidjs/testing-library": "^0.8.9",
-    "@stylistic/eslint-plugin": "^2.4.0",
-    "@stylistic/eslint-plugin-js": "^2.4.0",
-    "@stylistic/eslint-plugin-plus": "^2.4.0",
-    "@stylistic/eslint-plugin-ts": "^2.4.0",
+    "@stylistic/eslint-plugin": "^2.6.0",
+    "@stylistic/eslint-plugin-js": "^2.6.0",
+    "@stylistic/eslint-plugin-plus": "^2.6.0",
+    "@stylistic/eslint-plugin-ts": "^2.6.0",
     "@testing-library/jest-dom": "^6.4.8",
     "autoprefixer": "^10.4.19",
     "eslint": "^9.8.0",
@@ -36,11 +36,11 @@
     "solid-js": "^1.8.19",
     "tailwindcss": "^3.4.7",
     "typescript": "^5.5.4",
-    "typescript-eslint": "^7.18.0",
+    "typescript-eslint": "^8.0.0",
     "vercel": "^35.2.2",
     "vite": "^5.3.5",
     "vite-plugin-solid": "^2.10.2",
-    "vitest": "^2.0.4"
+    "vitest": "^2.0.5"
   },
   "engines": {
     "node": "20.x"
