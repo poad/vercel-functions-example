@@ -36,7 +36,7 @@
     "solid-js": "^1.8.20",
     "tailwindcss": "^3.4.9",
     "typescript": "^5.5.4",
-    "typescript-eslint": "^8.0.1",
+    "typescript-eslint": "^8.1.0",
     "vercel": "^35.2.4",
     "vite": "^5.4.0",
     "vite-plugin-solid": "^2.10.2",
