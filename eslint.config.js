@@ -14,9 +14,9 @@ import solid from 'eslint-plugin-solid';
 
 export default tseslint.config(
   eslint.configs.recommended,
-  pluginPromise.configs['flat/recommended'],
   ...tseslint.configs.strict,
   ...tseslint.configs.stylistic,
+  pluginPromise.configs['flat/recommended'],
   {
     ignores: [
       '**/*.d.ts',
