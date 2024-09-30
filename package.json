@@ -17,7 +17,7 @@
     "@hono/node-server": "^1.13.1",
     "@hono/zod-validator": "^0.3.0",
     "@vercel/postgres": "^0.10.0",
-    "flowbite": "^2.5.1",
+    "flowbite": "^2.5.2",
     "hono": "^4.6.3",
     "zod": "^3.23.8"
   },
