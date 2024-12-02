@@ -30,7 +30,7 @@
     "@stylistic/eslint-plugin-ts": "^2.11.0",
     "@testing-library/jest-dom": "^6.6.3",
     "autoprefixer": "^10.4.20",
-    "eslint": "^9.15.0",
+    "eslint": "^9.16.0",
     "eslint-import-resolver-typescript": "^3.6.3",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-promise": "^7.2.1",
@@ -42,7 +42,7 @@
     "typescript": "^5.7.2",
     "typescript-eslint": "^8.16.0",
     "vercel": "^39.1.2",
-    "vite": "^6.0.1",
+    "vite": "^6.0.2",
     "vite-plugin-solid": "^2.11.0",
     "vitest": "^2.1.6"
   },
