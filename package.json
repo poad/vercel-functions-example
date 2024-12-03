@@ -40,11 +40,11 @@
     "solid-js": "^1.9.3",
     "tailwindcss": "^3.4.15",
     "typescript": "^5.7.2",
-    "typescript-eslint": "^8.16.0",
+    "typescript-eslint": "^8.17.0",
     "vercel": "^39.1.2",
     "vite": "^6.0.2",
     "vite-plugin-solid": "^2.11.0",
-    "vitest": "^2.1.6"
+    "vitest": "^2.1.8"
   },
   "engines": {
     "node": "20.x"
