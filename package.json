@@ -15,10 +15,10 @@
   },
   "dependencies": {
     "@hono/node-server": "^1.13.7",
-    "@hono/zod-validator": "^0.4.1",
+    "@hono/zod-validator": "^0.4.2",
     "@vercel/postgres": "^0.10.0",
     "flowbite": "^2.5.2",
-    "hono": "^4.6.13",
+    "hono": "^4.6.14",
     "zod": "^3.24.1"
   },
   "devDependencies": {
@@ -30,7 +30,7 @@
     "@stylistic/eslint-plugin-ts": "^2.12.1",
     "@testing-library/jest-dom": "^6.6.3",
     "autoprefixer": "^10.4.20",
-    "eslint": "^9.16.0",
+    "eslint": "^9.17.0",
     "eslint-import-resolver-typescript": "^3.7.0",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-promise": "^7.2.1",
