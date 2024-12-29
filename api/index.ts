@@ -104,6 +104,7 @@ const messageApp = new Hono().post('/',
 
 const app = new Hono().basePath('/api');
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const routes = app
   .route('/hello', messageApp)
   .route('/todo', todoApp);
