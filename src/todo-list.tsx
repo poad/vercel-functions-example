@@ -18,7 +18,7 @@ function Message() {
   const [data] = createResource<{ message: string }>(() =>
     client.api.hello
       .$post({ json: { message: 'Hono' } })
-      .then((res) => res.json())
+      .then((res) => res.json()),
   );
   return (
     <ErrorBoundary fallback={<ErrorAlert>{data.error}</ErrorAlert>}>
@@ -41,6 +41,7 @@ export function TodoList(): JSX.Element {
 
   createResource(text, (text?: string) => {
     if (!text) return;
+    // eslint-disable-next-line promise/catch-or-return, promise/always-return
     client.api.todo.$put({ json: { content: text } }).then(async () => {
       refetch();
     });
@@ -48,6 +49,7 @@ export function TodoList(): JSX.Element {
 
   async function deleteTodo(id: string) {
     if (!id) return;
+    // eslint-disable-next-line promise/catch-or-return
     client.api.todo.$delete({ json: { id } }).then(() => refetch());
   }
 
