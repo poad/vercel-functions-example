@@ -22,7 +22,7 @@
     "zod": "^3.24.3"
   },
   "devDependencies": {
-    "@eslint/compat": "^1.2.8",
+    "@eslint/compat": "^1.2.9",
     "@solidjs/testing-library": "^0.8.10",
     "@stylistic/eslint-plugin": "^4.2.0",
     "@stylistic/eslint-plugin-js": "^4.2.0",
