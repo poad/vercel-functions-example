@@ -19,7 +19,7 @@
     "@vercel/postgres": "^0.10.0",
     "flowbite": "^3.1.2",
     "hono": "^4.7.7",
-    "zod": "^3.24.3"
+    "zod": "^3.24.4"
   },
   "devDependencies": {
     "@eslint/compat": "^1.2.9",
