@@ -38,7 +38,7 @@
     "eslint-plugin-promise": "^7.2.1",
     "eslint-plugin-solid": "^0.14.5",
     "jsdom": "^26.1.0",
-    "pnpm": "^10.9.0",
+    "pnpm": "^10.11.0",
     "postcss": "^8.5.3",
     "solid-js": "^1.9.5",
     "tailwindcss": "^4.1.4",
