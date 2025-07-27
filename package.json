@@ -18,7 +18,7 @@
     "@hono/zod-validator": "^0.7.2",
     "@vercel/postgres": "^0.10.0",
     "flowbite": "^3.1.2",
-    "hono": "^4.8.5",
+    "hono": "^4.8.9",
     "zod": "^4.0.10"
   },
   "devDependencies": {
@@ -30,9 +30,9 @@
     "@stylistic/eslint-plugin-plus": "^4.4.1",
     "@stylistic/eslint-plugin-ts": "^4.4.1",
     "@tailwindcss/postcss": "^4.1.11",
-    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/jest-dom": "^6.6.4",
     "autoprefixer": "^10.4.21",
-    "eslint": "^9.31.0",
+    "eslint": "^9.32.0",
     "eslint-import-resolver-typescript": "^4.4.4",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-promise": "^7.2.1",
@@ -44,7 +44,7 @@
     "tailwindcss": "^4.1.11",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.38.0",
-    "vercel": "^44.5.5",
+    "vercel": "^44.6.3",
     "vite": "^7.0.6",
     "vite-plugin-solid": "^2.11.7",
     "vitest": "^3.2.4"
