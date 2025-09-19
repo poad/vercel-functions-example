@@ -18,7 +18,7 @@
     "@hono/zod-validator": "^0.7.3",
     "@vercel/postgres": "^0.10.0",
     "flowbite": "^3.1.2",
-    "hono": "^4.9.7",
+    "hono": "^4.9.8",
     "zod": "^4.1.9"
   },
   "devDependencies": {
@@ -44,7 +44,7 @@
     "tailwindcss": "^4.1.13",
     "typescript": "^5.9.2",
     "typescript-eslint": "^8.44.0",
-    "vercel": "^48.0.2",
+    "vercel": "^48.0.3",
     "vite": "^7.1.6",
     "vite-plugin-solid": "^2.11.8",
     "vitest": "^3.2.4"
