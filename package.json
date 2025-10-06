@@ -18,7 +18,7 @@
     "@hono/zod-validator": "^0.7.3",
     "@vercel/postgres": "^0.10.0",
     "flowbite": "^3.1.2",
-    "hono": "^4.9.9",
+    "hono": "^4.9.10",
     "zod": "^4.1.11"
   },
   "devDependencies": {
@@ -32,7 +32,7 @@
     "@tailwindcss/postcss": "^4.1.14",
     "@testing-library/jest-dom": "^6.9.1",
     "autoprefixer": "^10.4.21",
-    "eslint": "^9.36.0",
+    "eslint": "^9.37.0",
     "eslint-import-resolver-typescript": "^4.4.4",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-promise": "^7.2.1",
