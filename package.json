@@ -17,12 +17,12 @@
     "@hono/node-server": "^1.19.6",
     "@hono/zod-validator": "^0.7.4",
     "@vercel/postgres": "^0.10.0",
-    "flowbite": "^4.0.0",
-    "hono": "^4.10.5",
+    "flowbite": "^4.0.1",
+    "hono": "^4.10.6",
     "zod": "^4.1.12"
   },
   "devDependencies": {
-    "@eslint/compat": "^1.4.1",
+    "@eslint/compat": "^2.0.0",
     "@solidjs/testing-library": "^0.8.10",
     "@stylistic/eslint-plugin": "^5.5.0",
     "@stylistic/eslint-plugin-js": "^4.4.1",
@@ -43,11 +43,11 @@
     "solid-js": "^1.9.10",
     "tailwindcss": "^4.1.17",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.46.4",
-    "vercel": "^48.10.0",
+    "typescript-eslint": "^8.47.0",
+    "vercel": "^48.10.3",
     "vite": "^7.2.2",
     "vite-plugin-solid": "^2.11.10",
-    "vitest": "^4.0.8"
+    "vitest": "^4.0.10"
   },
   "engines": {
     "node": ">=22.x"
