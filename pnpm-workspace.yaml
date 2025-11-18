@@ -4,3 +4,9 @@ onlyBuiltDependencies:
   - esbuild
   - unrs-resolver
   - utf-8-validate
+
+overrides:
+  esbuild@<=0.24.2: '>=0.25.0'
+  glob@>=10.3.7 <=11.0.3: '>=11.1.0'
+  undici@<5.29.0: '>=5.29.0'
+  undici@>=4.5.0 <5.28.5: '>=5.28.5'
