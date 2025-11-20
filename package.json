@@ -38,19 +38,19 @@
     "eslint-plugin-promise": "^7.2.1",
     "eslint-plugin-solid": "^0.14.5",
     "jsdom": "^27.2.0",
-    "pnpm": "^10.22.0",
+    "pnpm": "^10.23.0",
     "postcss": "^8.5.6",
     "solid-js": "^1.9.10",
     "tailwindcss": "^4.1.17",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.47.0",
-    "vercel": "^48.10.4",
+    "vercel": "^48.10.5",
     "vite": "^7.2.4",
     "vite-plugin-solid": "^2.11.10",
-    "vitest": "^4.0.10"
+    "vitest": "^4.0.12"
   },
   "engines": {
     "node": ">=22.x"
   },
-  "packageManager": "pnpm@10.22.0"
+  "packageManager": "pnpm@10.23.0"
 }
