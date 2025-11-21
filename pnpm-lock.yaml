@@ -100,8 +100,8 @@ importers:
         specifier: ^8.47.0
         version: 8.47.0(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)
       vercel:
-        specifier: ^48.10.5
-        version: 48.10.5(rollup@4.53.3)(typescript@5.9.3)
+        specifier: ^48.10.6
+        version: 48.10.6(rollup@4.53.3)(typescript@5.9.3)
       vite:
         specifier: ^7.2.4
         version: 7.2.4(@types/node@16.18.11)(jiti@2.6.1)(lightningcss@1.30.2)(tsx@4.19.2)(yaml@2.7.0)
@@ -1793,8 +1793,8 @@ packages:
     engines: {node: '>=16'}
     hasBin: true
 
-  electron-to-chromium@1.5.258:
-    resolution: {integrity: sha512-rHUggNV5jKQ0sSdWwlaRDkFc3/rRJIVnOSe9yR4zrR07m3ZxhP4N27Hlg8VeJGGYgFTxK5NqDmWI4DSH72vIJg==}
+  electron-to-chromium@1.5.259:
+    resolution: {integrity: sha512-I+oLXgpEJzD6Cwuwt1gYjxsDmu/S/Kd41mmLA3O+/uH2pFRO/DvOjUyGozL8j3KeLV6WyZ7ssPwELMsXCcsJAQ==}
 
   end-of-stream@1.1.0:
     resolution: {integrity: sha512-EoulkdKF/1xa92q25PbjuDcgJ9RDHYU2Rs3SCIvs2/dSQ3BpmxneNHmA/M7fe60M3PrV7nNGTTNbkK62l6vXiQ==}
@@ -3333,8 +3333,8 @@ packages:
   v8-compile-cache-lib@3.0.1:
     resolution: {integrity: sha512-wa7YjyUGfNZngI/vtK0UHAN+lgDCxBPCylVXGp0zu59Fz5aiGtNXaq3DhIov063MorB+VfufLh3JlF2KdTK3xg==}
 
-  vercel@48.10.5:
-    resolution: {integrity: sha512-Fw4b6U3fTXs6nFHC8gNqbpULPTtyCJXD8MdAloiLiluMjI7+mA74lgOnEMRpaWmR5cs4QMpPMnGBx9KqcLePCQ==}
+  vercel@48.10.6:
+    resolution: {integrity: sha512-QCshSaSS7bAGed86M3CJmR3LnvcM1nhLvSwKwaWBUg5ejEFIAHpIWuQmZ1GMZJYv9MiE8xqZ316A8b+5JiyFOw==}
     engines: {node: '>= 18'}
     hasBin: true
 
@@ -5045,7 +5045,7 @@ snapshots:
     dependencies:
       baseline-browser-mapping: 2.8.30
       caniuse-lite: 1.0.30001756
-      electron-to-chromium: 1.5.258
+      electron-to-chromium: 1.5.259
       node-releases: 2.0.27
       update-browserslist-db: 1.1.4(browserslist@4.28.0)
 
@@ -5225,7 +5225,7 @@ snapshots:
       signal-exit: 4.0.2
       time-span: 4.0.0
 
-  electron-to-chromium@1.5.258: {}
+  electron-to-chromium@1.5.259: {}
 
   end-of-stream@1.1.0:
     dependencies:
@@ -6930,7 +6930,7 @@ snapshots:
 
   v8-compile-cache-lib@3.0.1: {}
 
-  vercel@48.10.5(rollup@4.53.3)(typescript@5.9.3):
+  vercel@48.10.6(rollup@4.53.3)(typescript@5.9.3):
     dependencies:
       '@vercel/backends': 0.0.9(rollup@4.53.3)(typescript@5.9.3)
       '@vercel/blob': 1.0.2
