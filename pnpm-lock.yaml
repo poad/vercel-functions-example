@@ -103,11 +103,11 @@ importers:
         specifier: ^48.12.0
         version: 48.12.0(rollup@4.53.3)(typescript@5.9.3)
       vite:
-        specifier: ^7.2.4
-        version: 7.2.4(@types/node@16.18.11)(jiti@2.6.1)(lightningcss@1.30.2)(tsx@4.19.2)(yaml@2.7.0)
+        specifier: ^7.2.6
+        version: 7.2.6(@types/node@16.18.11)(jiti@2.6.1)(lightningcss@1.30.2)(tsx@4.19.2)(yaml@2.7.0)
       vite-plugin-solid:
         specifier: ^2.11.10
-        version: 2.11.10(@testing-library/jest-dom@6.9.1)(solid-js@1.9.10)(vite@7.2.4(@types/node@16.18.11)(jiti@2.6.1)(lightningcss@1.30.2)(tsx@4.19.2)(yaml@2.7.0))
+        version: 2.11.10(@testing-library/jest-dom@6.9.1)(solid-js@1.9.10)(vite@7.2.6(@types/node@16.18.11)(jiti@2.6.1)(lightningcss@1.30.2)(tsx@4.19.2)(yaml@2.7.0))
       vitest:
         specifier: ^4.0.14
         version: 4.0.14(@edge-runtime/vm@3.2.0)(@types/node@16.18.11)(jiti@2.6.1)(jsdom@27.2.0(bufferutil@4.0.9)(utf-8-validate@6.0.4))(lightningcss@1.30.2)(tsx@4.19.2)(yaml@2.7.0)
@@ -127,8 +127,8 @@ packages:
   '@asamuzakjp/css-color@4.1.0':
     resolution: {integrity: sha512-9xiBAtLn4aNsa4mDnpovJvBn72tNEIACyvlqaNJ+ADemR+yeMJWnBudOi2qGDviJa7SwcDOU/TRh5dnET7qk0w==}
 
-  '@asamuzakjp/dom-selector@6.7.4':
-    resolution: {integrity: sha512-buQDjkm+wDPXd6c13534URWZqbz0RP5PAhXZ+LIoa5LgwInT9HVJvGIJivg75vi8I13CxDGdTnz+aY5YUJlIAA==}
+  '@asamuzakjp/dom-selector@6.7.5':
+    resolution: {integrity: sha512-Eks6dY8zau4m4wNRQjRVaKQRTalNcPcBvU1ZQ35w5kKRk1gUeNCkVLsRiATurjASTp3TKM4H10wsI50nx3NZdw==}
 
   '@asamuzakjp/nwsapi@2.3.9':
     resolution: {integrity: sha512-n8GuYSrI9bF7FFZ/SjhwevlHc8xaVlb/7HmHelnc/PZXBD2ZR49NnN9sMMuDdEGPeeRQ5d0hqlSlEpgCX3Wl0Q==}
@@ -246,8 +246,8 @@ packages:
     peerDependencies:
       '@csstools/css-tokenizer': ^3.0.4
 
-  '@csstools/css-syntax-patches-for-csstree@1.0.19':
-    resolution: {integrity: sha512-QW5/SM2ARltEhoKcmRI1LoLf3/C7dHGswwCnfLcoMgqurBT4f8GvwXMgAbK/FwcxthmJRK5MGTtddj0yQn0J9g==}
+  '@csstools/css-syntax-patches-for-csstree@1.0.20':
+    resolution: {integrity: sha512-8BHsjXfSciZxjmHQOuVdW2b8WLUPts9a+mfL13/PzEviufUEW2xnvQuOlKs9dRBHgRqJ53SF/DUoK9+MZk72oQ==}
     engines: {node: '>=18'}
 
   '@csstools/css-tokenizer@3.0.4':
@@ -630,8 +630,8 @@ packages:
     resolution: {integrity: sha512-PRfWP+8FOldvbApr6xL7mNCw4cJcSTq4GA7tYbgq15mRb0kWKO/wEB2jr+uwjFH3sZvEZneZyCUGTxsv4Sahyw==}
     engines: {node: ^20.19.0 || ^22.13.0 || >=24}
 
-  '@eslint/eslintrc@3.3.1':
-    resolution: {integrity: sha512-gtF186CXhIl1p4pJNGZw8Yc6RlshoePRvE0X91oPGb3vZ8pM3qOS9W9NGPat9LziaBV7XrJWGylNQXkGcnM3IQ==}
+  '@eslint/eslintrc@3.3.3':
+    resolution: {integrity: sha512-Kr+LPIUVKz2qkx1HAMH8q1q6azbqBAsXJUxBl/ODDuVPX45Z9DfwB8tPjTi6nNZ8BuM3nbJxC5zCAg5elnBUTQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@eslint/js@9.39.1':
@@ -1577,8 +1577,8 @@ packages:
   balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
 
-  baseline-browser-mapping@2.8.31:
-    resolution: {integrity: sha512-a28v2eWrrRWPpJSzxc+mKwm0ZtVx/G8SepdQZDArnXYU/XS+IF6mp8aB/4E+hH1tyGCoDo3KlUCdlSxGDsRkAw==}
+  baseline-browser-mapping@2.8.32:
+    resolution: {integrity: sha512-OPz5aBThlyLFgxyhdwf/s2+8ab3OvT7AdTNvKHBwpXomIYeXqpUUuT8LrdtxZSsWJ4R4CU1un4XGh5Ez3nlTpw==}
     hasBin: true
 
   bidi-js@1.0.3:
@@ -3372,8 +3372,8 @@ packages:
       '@testing-library/jest-dom':
         optional: true
 
-  vite@7.2.4:
-    resolution: {integrity: sha512-NL8jTlbo0Tn4dUEXEsUg8KeyG/Lkmc4Fnzb8JXN/Ykm9G4HNImjtABMJgkQoVjOBN/j2WAwDTRytdqJbZsah7w==}
+  vite@7.2.6:
+    resolution: {integrity: sha512-tI2l/nFHC5rLh7+5+o7QjKjSR04ivXDF4jcgV0f/bTQ+OJiITy5S6gaynVsEM+7RqzufMnVbIon6Sr5x1SDYaQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -3599,7 +3599,7 @@ snapshots:
       '@csstools/css-tokenizer': 3.0.4
       lru-cache: 11.2.2
 
-  '@asamuzakjp/dom-selector@6.7.4':
+  '@asamuzakjp/dom-selector@6.7.5':
     dependencies:
       '@asamuzakjp/nwsapi': 2.3.9
       bidi-js: 1.0.3
@@ -3744,7 +3744,7 @@ snapshots:
     dependencies:
       '@csstools/css-tokenizer': 3.0.4
 
-  '@csstools/css-syntax-patches-for-csstree@1.0.19': {}
+  '@csstools/css-syntax-patches-for-csstree@1.0.20': {}
 
   '@csstools/css-tokenizer@3.0.4': {}
 
@@ -3965,7 +3965,7 @@ snapshots:
     dependencies:
       '@types/json-schema': 7.0.15
 
-  '@eslint/eslintrc@3.3.1':
+  '@eslint/eslintrc@3.3.3':
     dependencies:
       ajv: 6.12.6
       debug: 4.4.3
@@ -4872,13 +4872,13 @@ snapshots:
       chai: 6.2.1
       tinyrainbow: 3.0.3
 
-  '@vitest/mocker@4.0.14(vite@7.2.4(@types/node@16.18.11)(jiti@2.6.1)(lightningcss@1.30.2)(tsx@4.19.2)(yaml@2.7.0))':
+  '@vitest/mocker@4.0.14(vite@7.2.6(@types/node@16.18.11)(jiti@2.6.1)(lightningcss@1.30.2)(tsx@4.19.2)(yaml@2.7.0))':
     dependencies:
       '@vitest/spy': 4.0.14
       estree-walker: 3.0.3
       magic-string: 0.30.21
     optionalDependencies:
-      vite: 7.2.4(@types/node@16.18.11)(jiti@2.6.1)(lightningcss@1.30.2)(tsx@4.19.2)(yaml@2.7.0)
+      vite: 7.2.6(@types/node@16.18.11)(jiti@2.6.1)(lightningcss@1.30.2)(tsx@4.19.2)(yaml@2.7.0)
 
   '@vitest/pretty-format@4.0.14':
     dependencies:
@@ -5056,7 +5056,7 @@ snapshots:
 
   balanced-match@1.0.2: {}
 
-  baseline-browser-mapping@2.8.31: {}
+  baseline-browser-mapping@2.8.32: {}
 
   bidi-js@1.0.3:
     dependencies:
@@ -5081,7 +5081,7 @@ snapshots:
 
   browserslist@4.28.0:
     dependencies:
-      baseline-browser-mapping: 2.8.31
+      baseline-browser-mapping: 2.8.32
       caniuse-lite: 1.0.30001757
       electron-to-chromium: 1.5.262
       node-releases: 2.0.27
@@ -5171,7 +5171,7 @@ snapshots:
   cssstyle@5.3.3:
     dependencies:
       '@asamuzakjp/css-color': 4.1.0
-      '@csstools/css-syntax-patches-for-csstree': 1.0.19
+      '@csstools/css-syntax-patches-for-csstree': 1.0.20
       css-tree: 3.1.0
 
   csstype@3.2.3: {}
@@ -5532,7 +5532,7 @@ snapshots:
       '@eslint/config-array': 0.21.1
       '@eslint/config-helpers': 0.4.2
       '@eslint/core': 0.17.0
-      '@eslint/eslintrc': 3.3.1
+      '@eslint/eslintrc': 3.3.3
       '@eslint/js': 9.39.1
       '@eslint/plugin-kit': 0.4.1
       '@humanfs/node': 0.16.7
@@ -6028,7 +6028,7 @@ snapshots:
   jsdom@27.2.0(bufferutil@4.0.9)(utf-8-validate@6.0.4):
     dependencies:
       '@acemir/cssom': 0.9.24
-      '@asamuzakjp/dom-selector': 6.7.4
+      '@asamuzakjp/dom-selector': 6.7.5
       cssstyle: 5.3.3
       data-urls: 6.0.0
       decimal.js: 10.6.0
@@ -7019,7 +7019,7 @@ snapshots:
       - supports-color
       - typescript
 
-  vite-plugin-solid@2.11.10(@testing-library/jest-dom@6.9.1)(solid-js@1.9.10)(vite@7.2.4(@types/node@16.18.11)(jiti@2.6.1)(lightningcss@1.30.2)(tsx@4.19.2)(yaml@2.7.0)):
+  vite-plugin-solid@2.11.10(@testing-library/jest-dom@6.9.1)(solid-js@1.9.10)(vite@7.2.6(@types/node@16.18.11)(jiti@2.6.1)(lightningcss@1.30.2)(tsx@4.19.2)(yaml@2.7.0)):
     dependencies:
       '@babel/core': 7.28.5
       '@types/babel__core': 7.20.5
@@ -7027,14 +7027,14 @@ snapshots:
       merge-anything: 5.1.7
       solid-js: 1.9.10
       solid-refresh: 0.6.3(solid-js@1.9.10)
-      vite: 7.2.4(@types/node@16.18.11)(jiti@2.6.1)(lightningcss@1.30.2)(tsx@4.19.2)(yaml@2.7.0)
-      vitefu: 1.1.1(vite@7.2.4(@types/node@16.18.11)(jiti@2.6.1)(lightningcss@1.30.2)(tsx@4.19.2)(yaml@2.7.0))
+      vite: 7.2.6(@types/node@16.18.11)(jiti@2.6.1)(lightningcss@1.30.2)(tsx@4.19.2)(yaml@2.7.0)
+      vitefu: 1.1.1(vite@7.2.6(@types/node@16.18.11)(jiti@2.6.1)(lightningcss@1.30.2)(tsx@4.19.2)(yaml@2.7.0))
     optionalDependencies:
       '@testing-library/jest-dom': 6.9.1
     transitivePeerDependencies:
       - supports-color
 
-  vite@7.2.4(@types/node@16.18.11)(jiti@2.6.1)(lightningcss@1.30.2)(tsx@4.19.2)(yaml@2.7.0):
+  vite@7.2.6(@types/node@16.18.11)(jiti@2.6.1)(lightningcss@1.30.2)(tsx@4.19.2)(yaml@2.7.0):
     dependencies:
       esbuild: 0.25.12
       fdir: 6.5.0(picomatch@4.0.3)
@@ -7050,14 +7050,14 @@ snapshots:
       tsx: 4.19.2
       yaml: 2.7.0
 
-  vitefu@1.1.1(vite@7.2.4(@types/node@16.18.11)(jiti@2.6.1)(lightningcss@1.30.2)(tsx@4.19.2)(yaml@2.7.0)):
+  vitefu@1.1.1(vite@7.2.6(@types/node@16.18.11)(jiti@2.6.1)(lightningcss@1.30.2)(tsx@4.19.2)(yaml@2.7.0)):
     optionalDependencies:
-      vite: 7.2.4(@types/node@16.18.11)(jiti@2.6.1)(lightningcss@1.30.2)(tsx@4.19.2)(yaml@2.7.0)
+      vite: 7.2.6(@types/node@16.18.11)(jiti@2.6.1)(lightningcss@1.30.2)(tsx@4.19.2)(yaml@2.7.0)
 
   vitest@4.0.14(@edge-runtime/vm@3.2.0)(@types/node@16.18.11)(jiti@2.6.1)(jsdom@27.2.0(bufferutil@4.0.9)(utf-8-validate@6.0.4))(lightningcss@1.30.2)(tsx@4.19.2)(yaml@2.7.0):
     dependencies:
       '@vitest/expect': 4.0.14
-      '@vitest/mocker': 4.0.14(vite@7.2.4(@types/node@16.18.11)(jiti@2.6.1)(lightningcss@1.30.2)(tsx@4.19.2)(yaml@2.7.0))
+      '@vitest/mocker': 4.0.14(vite@7.2.6(@types/node@16.18.11)(jiti@2.6.1)(lightningcss@1.30.2)(tsx@4.19.2)(yaml@2.7.0))
       '@vitest/pretty-format': 4.0.14
       '@vitest/runner': 4.0.14
       '@vitest/snapshot': 4.0.14
@@ -7074,7 +7074,7 @@ snapshots:
       tinyexec: 0.3.2
       tinyglobby: 0.2.15
       tinyrainbow: 3.0.3
-      vite: 7.2.4(@types/node@16.18.11)(jiti@2.6.1)(lightningcss@1.30.2)(tsx@4.19.2)(yaml@2.7.0)
+      vite: 7.2.6(@types/node@16.18.11)(jiti@2.6.1)(lightningcss@1.30.2)(tsx@4.19.2)(yaml@2.7.0)
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@edge-runtime/vm': 3.2.0
