@@ -100,8 +100,8 @@ importers:
         specifier: ^8.48.1
         version: 8.48.1(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)
       vercel:
-        specifier: ^49.1.0
-        version: 49.1.0(rollup@4.53.3)(typescript@5.9.3)
+        specifier: ^49.1.1
+        version: 49.1.1(rollup@4.53.3)(typescript@5.9.3)
       vite:
         specifier: ^7.2.6
         version: 7.2.6(@types/node@16.18.11)(jiti@2.6.1)(lightningcss@1.30.2)(tsx@4.19.2)(yaml@2.7.0)
@@ -127,8 +127,8 @@ packages:
   '@asamuzakjp/css-color@4.1.0':
     resolution: {integrity: sha512-9xiBAtLn4aNsa4mDnpovJvBn72tNEIACyvlqaNJ+ADemR+yeMJWnBudOi2qGDviJa7SwcDOU/TRh5dnET7qk0w==}
 
-  '@asamuzakjp/dom-selector@6.7.5':
-    resolution: {integrity: sha512-Eks6dY8zau4m4wNRQjRVaKQRTalNcPcBvU1ZQ35w5kKRk1gUeNCkVLsRiATurjASTp3TKM4H10wsI50nx3NZdw==}
+  '@asamuzakjp/dom-selector@6.7.6':
+    resolution: {integrity: sha512-hBaJER6A9MpdG3WgdlOolHmbOYvSk46y7IQN/1+iqiCuUu6iWdQrs9DGKF8ocqsEqWujWf/V7b7vaDgiUmIvUg==}
 
   '@asamuzakjp/nwsapi@2.3.9':
     resolution: {integrity: sha512-n8GuYSrI9bF7FFZ/SjhwevlHc8xaVlb/7HmHelnc/PZXBD2ZR49NnN9sMMuDdEGPeeRQ5d0hqlSlEpgCX3Wl0Q==}
@@ -1577,8 +1577,8 @@ packages:
   balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
 
-  baseline-browser-mapping@2.9.2:
-    resolution: {integrity: sha512-PxSsosKQjI38iXkmb3d0Y32efqyA0uW4s41u4IVBsLlWLhCiYNpH/AfNOVWRqCQBlD8TFJTz6OUWNd4DFJCnmw==}
+  baseline-browser-mapping@2.9.3:
+    resolution: {integrity: sha512-8QdH6czo+G7uBsNo0GiUfouPN1lRzKdJTGnKXwe12gkFbnnOUaUKGN55dMkfy+mnxmvjwl9zcI4VncczcVXDhA==}
     hasBin: true
 
   bidi-js@1.0.3:
@@ -1802,8 +1802,8 @@ packages:
     engines: {node: '>=16'}
     hasBin: true
 
-  electron-to-chromium@1.5.265:
-    resolution: {integrity: sha512-B7IkLR1/AE+9jR2LtVF/1/6PFhY5TlnEHnlrKmGk7PvkJibg5jr+mLXLLzq3QYl6PA1T/vLDthQPqIPAlS/PPA==}
+  electron-to-chromium@1.5.266:
+    resolution: {integrity: sha512-kgWEglXvkEfMH7rxP5OSZZwnaDWT7J9EoZCujhnpLbfi0bbNtRkgdX2E3gt0Uer11c61qCYktB3hwkAS325sJg==}
 
   end-of-stream@1.1.0:
     resolution: {integrity: sha512-EoulkdKF/1xa92q25PbjuDcgJ9RDHYU2Rs3SCIvs2/dSQ3BpmxneNHmA/M7fe60M3PrV7nNGTTNbkK62l6vXiQ==}
@@ -3361,8 +3361,8 @@ packages:
   v8-compile-cache-lib@3.0.1:
     resolution: {integrity: sha512-wa7YjyUGfNZngI/vtK0UHAN+lgDCxBPCylVXGp0zu59Fz5aiGtNXaq3DhIov063MorB+VfufLh3JlF2KdTK3xg==}
 
-  vercel@49.1.0:
-    resolution: {integrity: sha512-7nGmUQyPQhpfv1LfAQ3bLmJ4gf4Zf1+18B1uvau+xiTUUWee2fnPoaDU+35dsi3JhaC1SxZUdfzTVFIxoKwiQQ==}
+  vercel@49.1.1:
+    resolution: {integrity: sha512-dWvdrTc+hiMlT77mU3uyk2PBZ981ARKEq2FhoKp65CV0LOB0bBy9nq/JJTsKXGfVlFCifdm0Eik8MV1A+zI5wg==}
     engines: {node: '>= 18'}
     hasBin: true
 
@@ -3603,7 +3603,7 @@ snapshots:
       '@csstools/css-tokenizer': 3.0.4
       lru-cache: 11.2.4
 
-  '@asamuzakjp/dom-selector@6.7.5':
+  '@asamuzakjp/dom-selector@6.7.6':
     dependencies:
       '@asamuzakjp/nwsapi': 2.3.9
       bidi-js: 1.0.3
@@ -5060,7 +5060,7 @@ snapshots:
 
   balanced-match@1.0.2: {}
 
-  baseline-browser-mapping@2.9.2: {}
+  baseline-browser-mapping@2.9.3: {}
 
   bidi-js@1.0.3:
     dependencies:
@@ -5085,9 +5085,9 @@ snapshots:
 
   browserslist@4.28.1:
     dependencies:
-      baseline-browser-mapping: 2.9.2
+      baseline-browser-mapping: 2.9.3
       caniuse-lite: 1.0.30001759
-      electron-to-chromium: 1.5.265
+      electron-to-chromium: 1.5.266
       node-releases: 2.0.27
       update-browserslist-db: 1.2.2(browserslist@4.28.1)
 
@@ -5267,7 +5267,7 @@ snapshots:
       signal-exit: 4.0.2
       time-span: 4.0.0
 
-  electron-to-chromium@1.5.265: {}
+  electron-to-chromium@1.5.266: {}
 
   end-of-stream@1.1.0:
     dependencies:
@@ -6032,7 +6032,7 @@ snapshots:
   jsdom@27.2.0(bufferutil@4.0.9)(utf-8-validate@6.0.4):
     dependencies:
       '@acemir/cssom': 0.9.26
-      '@asamuzakjp/dom-selector': 6.7.5
+      '@asamuzakjp/dom-selector': 6.7.6
       cssstyle: 5.3.3
       data-urls: 6.0.0
       decimal.js: 10.6.0
@@ -6992,7 +6992,7 @@ snapshots:
 
   v8-compile-cache-lib@3.0.1: {}
 
-  vercel@49.1.0(rollup@4.53.3)(typescript@5.9.3):
+  vercel@49.1.1(rollup@4.53.3)(typescript@5.9.3):
     dependencies:
       '@vercel/backends': 0.0.15(rollup@4.53.3)(typescript@5.9.3)
       '@vercel/blob': 1.0.2
