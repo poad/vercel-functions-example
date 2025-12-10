@@ -18,7 +18,7 @@
     "@hono/zod-validator": "^0.7.5",
     "@vercel/postgres": "^0.10.0",
     "flowbite": "^4.0.1",
-    "hono": "^4.10.7",
+    "hono": "^4.10.8",
     "zod": "^4.1.13"
   },
   "devDependencies": {
