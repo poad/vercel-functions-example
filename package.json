@@ -19,7 +19,7 @@
     "@vercel/postgres": "^0.10.0",
     "flowbite": "^4.0.1",
     "hono": "^4.11.1",
-    "zod": "^4.1.13"
+    "zod": "^4.2.0"
   },
   "devDependencies": {
     "@eslint/compat": "^2.0.0",
@@ -38,19 +38,19 @@
     "eslint-plugin-promise": "^7.2.1",
     "eslint-plugin-solid": "^0.14.5",
     "jsdom": "^27.3.0",
-    "pnpm": "^10.25.0",
+    "pnpm": "^10.26.0",
     "postcss": "^8.5.6",
     "solid-js": "^1.9.10",
     "tailwindcss": "^4.1.18",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.49.0",
+    "typescript-eslint": "^8.50.0",
     "vercel": "^50.0.1",
-    "vite": "^7.2.7",
+    "vite": "^7.3.0",
     "vite-plugin-solid": "^2.11.10",
     "vitest": "^4.0.15"
   },
   "engines": {
     "node": ">=22.x"
   },
-  "packageManager": "pnpm@10.25.0"
+  "packageManager": "pnpm@10.26.0"
 }
