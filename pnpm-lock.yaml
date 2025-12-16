@@ -19,7 +19,7 @@ importers:
         version: 1.19.7(hono@4.11.1)
       '@hono/zod-validator':
         specifier: ^0.7.5
-        version: 0.7.5(hono@4.11.1)(zod@4.2.0)
+        version: 0.7.5(hono@4.11.1)(zod@4.2.1)
       '@vercel/postgres':
         specifier: ^0.10.0
         version: 0.10.0(utf-8-validate@6.0.4)
@@ -30,8 +30,8 @@ importers:
         specifier: ^4.11.1
         version: 4.11.1
       zod:
-        specifier: ^4.2.0
-        version: 4.2.0
+        specifier: ^4.2.1
+        version: 4.2.1
     devDependencies:
       '@eslint/compat':
         specifier: ^2.0.0
@@ -100,8 +100,8 @@ importers:
         specifier: ^8.50.0
         version: 8.50.0(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3)
       vercel:
-        specifier: ^50.0.1
-        version: 50.0.1(rollup@4.53.4)(typescript@5.9.3)
+        specifier: ^50.1.0
+        version: 50.1.0(rollup@4.53.4)(typescript@5.9.3)
       vite:
         specifier: ^7.3.0
         version: 7.3.0(@types/node@16.18.11)(jiti@2.6.1)(lightningcss@1.30.2)(tsx@4.19.2)(yaml@2.7.0)
@@ -1458,8 +1458,8 @@ packages:
   '@vercel/nestjs@0.2.18':
     resolution: {integrity: sha512-3Jvgx/2XxBvB/P/YE/6/Xzt5LjPg9AmiTMVka+ht+iPkFWQrPC1ClbKvUj/fJgquG3Y9s58lDgHSEOUCzYQl9g==}
 
-  '@vercel/next@4.15.8':
-    resolution: {integrity: sha512-yxAidtaMOTUHLDcPz7TjeG8osGHN2842+RkoZA6+mZ52UaxVo6gY8TMk6GFOj4x+IPkj1I0HXdeIzdepDa0VyA==}
+  '@vercel/next@4.15.9':
+    resolution: {integrity: sha512-L1bQTxyCnGhWXafQ5xGgOvhAfGZbh5AVro0yOvAHf5Y3plGktR/psudEbbKyEeCszttVHWgdGwKYiVu+0nO40g==}
 
   '@vercel/nft@1.1.1':
     resolution: {integrity: sha512-mKMGa7CEUcXU75474kOeqHbtvK1kAcu4wiahhmlUenB5JbTQB8wVlDI8CyHR3rpGo0qlzoRWqcDzI41FUoBJCA==}
@@ -1473,8 +1473,8 @@ packages:
     resolution: {integrity: sha512-fSD23DxGND40IzSkXjcFcxr53t3Tiym59Is0jSYIFpG4/0f0KO9SGtcp1sXiebvPaGe7N/tU05cH4yt2S6/IPg==}
     engines: {node: '>=18.14'}
 
-  '@vercel/python@6.1.3':
-    resolution: {integrity: sha512-zBq7kWF0np03z+0wX5XnoEPG4yTCuTwrN/ZozCNjso1iOTQQo8YwcrccjR71+STmFjX5xZ3DoAZoAxpJa80WYg==}
+  '@vercel/python@6.1.4':
+    resolution: {integrity: sha512-rAaQtNxQuiXTQJQRSp8HblyEn8OfrF8ShVnR21WgUk/MisYVbBHS9vSbma50JuNx4UsWjA5CEzGNLW2PQkxlHQ==}
 
   '@vercel/redwood@2.4.6':
     resolution: {integrity: sha512-lJgRENm7yZHvSMiGTFXd/x1Asz6MTFACfJHHMDThNL2hESvpbrOpp27t/NfNMCrV7TUEedHOE1fNIogy704S0Q==}
@@ -1640,6 +1640,9 @@ packages:
   async-sema@3.1.1:
     resolution: {integrity: sha512-tLRNUXati5MFePdAk8dw7Qt7DpxPB60ofAgn8WRhW6a2rcimZnYBP9oxHiv0OHy+Wz7kPMG+t4LGdt31+4EmGg==}
 
+  asynckit@0.4.0:
+    resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
+
   autoprefixer@10.4.23:
     resolution: {integrity: sha512-YYTXSFulfwytnjAPlw8QHncHJmlvFKtczb8InXaAx9Q0LbfDnfEYDE55omerIJKihhmU61Ft+cAOSzQVaBUmeA==}
     engines: {node: ^10 || ^12 || >=14}
@@ -1756,6 +1759,10 @@ packages:
   color-name@1.1.4:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
 
+  combined-stream@1.0.8:
+    resolution: {integrity: sha512-FQN4MRfuJeHf7cBbBMJFXhKSDq+2kAArBlmRBvcvFE5BB1HZKXtSFASDhdlz9zOYwxh8lDdnvmMOe/+5cdoEdg==}
+    engines: {node: '>= 0.8'}
+
   concat-map@0.0.1:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
 
@@ -1857,6 +1864,10 @@ packages:
   define-properties@1.2.1:
     resolution: {integrity: sha512-8QmQKqEASLd5nx0U1B1okLElbUuuttJ/AnYmRXbbbGDWh6uS208EjD4Xqq/I9wK7u0v6O08XhTWnt5XtEbR6Dg==}
     engines: {node: '>= 0.4'}
+
+  delayed-stream@1.0.0:
+    resolution: {integrity: sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ==}
+    engines: {node: '>=0.4.0'}
 
   depd@1.1.2:
     resolution: {integrity: sha512-7emPTl6Dpo6JRXOXjLRxck+FlLRX5847cLKEn00PLAgc3g2hTZZgr+e4c2v6QpSmLeFP3n5yUo7ft6avBK/5jQ==}
@@ -2157,6 +2168,10 @@ packages:
   for-each@0.3.5:
     resolution: {integrity: sha512-dKx12eRCVIzqCxFGplyFKJMPvLEWgmNtUrpTiJIR5u97zEhRG8ySrtboPHZXx7daLxQVrl643cTzbab2tkQjxg==}
     engines: {node: '>= 0.4'}
+
+  form-data@4.0.5:
+    resolution: {integrity: sha512-8RipRLol37bNs2bhoV67fiTEvdTrbMUYcFTiy3+wuuOnUog2QBHCZWXDRijWQfAkhBj2Uf5UnVaiWwA5vdd82w==}
+    engines: {node: '>= 6'}
 
   fraction.js@5.3.4:
     resolution: {integrity: sha512-1X1NTtiJphryn/uLQz3whtY6jK3fTqoE3ohKs0tT+Ujr1W59oopxmoEh7Lu5p6vBaPbgoM0bzveAW4Qi5RyWDQ==}
@@ -3450,8 +3465,8 @@ packages:
   v8-compile-cache-lib@3.0.1:
     resolution: {integrity: sha512-wa7YjyUGfNZngI/vtK0UHAN+lgDCxBPCylVXGp0zu59Fz5aiGtNXaq3DhIov063MorB+VfufLh3JlF2KdTK3xg==}
 
-  vercel@50.0.1:
-    resolution: {integrity: sha512-M4RBfqb6r9Xwz4TFedxaZOM+LhL3vAxTug3bYlLjVzoga01AqEd3mgWeI7kQmsxhCBUMViJrZ9oIls472jGNMA==}
+  vercel@50.1.0:
+    resolution: {integrity: sha512-a1SouUAEaB5hNW1lg8eGnC2vDWyHF81qLmzacCo5nN5wZ9wBxAMG6KNQc+7cUekkcybinyPQ1qt8nbLsc0ogFw==}
     engines: {node: '>= 18'}
     hasBin: true
 
@@ -3673,8 +3688,8 @@ packages:
   zod@3.22.4:
     resolution: {integrity: sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==}
 
-  zod@4.2.0:
-    resolution: {integrity: sha512-Bd5fw9wlIhtqCCxotZgdTOMwGm1a0u75wARVEY9HMs1X17trvA/lMi4+MGK5EUfYkXVTbX8UDiDKW4OgzHVUZw==}
+  zod@4.2.1:
+    resolution: {integrity: sha512-0wZ1IRqGGhMP76gLqz8EyfBXKk0J2qo2+H3fi4mcUP/KtTocoX08nmIAHl1Z2kJIZbZee8KOpBCSNPRgauucjw==}
 
 snapshots:
 
@@ -4087,10 +4102,10 @@ snapshots:
     dependencies:
       hono: 4.11.1
 
-  '@hono/zod-validator@0.7.5(hono@4.11.1)(zod@4.2.0)':
+  '@hono/zod-validator@0.7.5(hono@4.11.1)(zod@4.2.1)':
     dependencies:
       hono: 4.11.1
-      zod: 4.2.0
+      zod: 4.2.1
 
   '@humanfs/core@0.19.1': {}
 
@@ -4892,7 +4907,7 @@ snapshots:
       - rollup
       - supports-color
 
-  '@vercel/next@4.15.8(rollup@4.53.4)':
+  '@vercel/next@4.15.9(rollup@4.53.4)':
     dependencies:
       '@vercel/nft': 1.1.1(rollup@4.53.4)
     transitivePeerDependencies:
@@ -4959,7 +4974,7 @@ snapshots:
     transitivePeerDependencies:
       - utf-8-validate
 
-  '@vercel/python@6.1.3': {}
+  '@vercel/python@6.1.4': {}
 
   '@vercel/redwood@2.4.6(rollup@4.53.4)':
     dependencies:
@@ -5166,6 +5181,8 @@ snapshots:
 
   async-sema@3.1.1: {}
 
+  asynckit@0.4.0: {}
+
   autoprefixer@10.4.23(postcss@8.5.6):
     dependencies:
       browserslist: 4.28.1
@@ -5282,6 +5299,10 @@ snapshots:
 
   color-name@1.1.4: {}
 
+  combined-stream@1.0.8:
+    dependencies:
+      delayed-stream: 1.0.0
+
   concat-map@0.0.1: {}
 
   consola@3.4.2: {}
@@ -5371,6 +5392,8 @@ snapshots:
       define-data-property: 1.1.4
       has-property-descriptors: 1.0.2
       object-keys: 1.1.1
+
+  delayed-stream@1.0.0: {}
 
   depd@1.1.2: {}
 
@@ -5832,6 +5855,14 @@ snapshots:
   for-each@0.3.5:
     dependencies:
       is-callable: 1.2.7
+
+  form-data@4.0.5:
+    dependencies:
+      asynckit: 0.4.0
+      combined-stream: 1.0.8
+      es-set-tostringtag: 2.1.0
+      hasown: 2.0.2
+      mime-types: 2.1.35
 
   fraction.js@5.3.4: {}
 
@@ -7148,7 +7179,7 @@ snapshots:
 
   v8-compile-cache-lib@3.0.1: {}
 
-  vercel@50.0.1(rollup@4.53.4)(typescript@5.9.3):
+  vercel@50.1.0(rollup@4.53.4)(typescript@5.9.3):
     dependencies:
       '@vercel/backends': 0.0.17(rollup@4.53.4)(typescript@5.9.3)
       '@vercel/blob': 1.0.2
@@ -7163,9 +7194,9 @@ snapshots:
       '@vercel/hono': 0.2.17(rollup@4.53.4)
       '@vercel/hydrogen': 1.3.3
       '@vercel/nestjs': 0.2.18(rollup@4.53.4)
-      '@vercel/next': 4.15.8(rollup@4.53.4)
+      '@vercel/next': 4.15.9(rollup@4.53.4)
       '@vercel/node': 5.5.15(rollup@4.53.4)
-      '@vercel/python': 6.1.3
+      '@vercel/python': 6.1.4
       '@vercel/redwood': 2.4.6(rollup@4.53.4)
       '@vercel/remix-builder': 5.5.6(rollup@4.53.4)
       '@vercel/ruby': 2.2.3
@@ -7173,6 +7204,7 @@ snapshots:
       '@vercel/static-build': 2.8.14
       chokidar: 4.0.0
       esbuild: 0.27.0
+      form-data: 4.0.5
       jose: 5.9.6
     transitivePeerDependencies:
       - '@swc/core'
@@ -7382,4 +7414,4 @@ snapshots:
 
   zod@3.22.4: {}
 
-  zod@4.2.0: {}
+  zod@4.2.1: {}
