@@ -16,10 +16,10 @@ importers:
     dependencies:
       '@hono/node-server':
         specifier: ^1.19.7
-        version: 1.19.7(hono@4.11.1)
+        version: 1.19.7(hono@4.11.2)
       '@hono/zod-validator':
         specifier: ^0.7.6
-        version: 0.7.6(hono@4.11.1)(zod@4.2.1)
+        version: 0.7.6(hono@4.11.2)(zod@4.2.1)
       '@vercel/postgres':
         specifier: ^0.10.0
         version: 0.10.0(utf-8-validate@6.0.4)
@@ -27,8 +27,8 @@ importers:
         specifier: ^4.0.1
         version: 4.0.1(rollup@4.54.0)
       hono:
-        specifier: ^4.11.1
-        version: 4.11.1
+        specifier: ^4.11.2
+        version: 4.11.2
       zod:
         specifier: ^4.2.1
         version: 4.2.1
@@ -2286,8 +2286,8 @@ packages:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
 
-  hono@4.11.1:
-    resolution: {integrity: sha512-KsFcH0xxHes0J4zaQgWbYwmz3UPOOskdqZmItstUG93+Wk1ePBLkLGwbP9zlmh1BFUiL8Qp+Xfu9P7feJWpGNg==}
+  hono@4.11.2:
+    resolution: {integrity: sha512-o+avdUAD1v94oHkjGBhiMhBV4WBHxhbu0+CUVH78hhphKy/OKQLxtKjkmmNcrMlbYAhAbsM/9F+l3KnYxyD3Lg==}
     engines: {node: '>=16.9.0'}
 
   html-encoding-sniffer@4.0.0:
@@ -4094,13 +4094,13 @@ snapshots:
       '@eslint/core': 0.17.0
       levn: 0.4.1
 
-  '@hono/node-server@1.19.7(hono@4.11.1)':
+  '@hono/node-server@1.19.7(hono@4.11.2)':
     dependencies:
-      hono: 4.11.1
+      hono: 4.11.2
 
-  '@hono/zod-validator@0.7.6(hono@4.11.1)(zod@4.2.1)':
+  '@hono/zod-validator@0.7.6(hono@4.11.2)(zod@4.2.1)':
     dependencies:
-      hono: 4.11.1
+      hono: 4.11.2
       zod: 4.2.1
 
   '@humanfs/core@0.19.1': {}
@@ -5973,7 +5973,7 @@ snapshots:
     dependencies:
       function-bind: 1.1.2
 
-  hono@4.11.1: {}
+  hono@4.11.2: {}
 
   html-encoding-sniffer@4.0.0:
     dependencies:
