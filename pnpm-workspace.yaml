@@ -6,6 +6,7 @@ onlyBuiltDependencies:
   - utf-8-validate
 
 overrides:
+  diff@<8.0.3: '>=8.0.3'
   esbuild@<=0.24.2: '>=0.25.0'
   glob@>=10.3.7 <=11.0.3: '>=11.1.0'
   undici@<5.29.0: '>=5.29.0'
