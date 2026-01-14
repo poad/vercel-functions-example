@@ -14,7 +14,7 @@
     "lint-fix": "pnpm run /^.*:fix$/"
   },
   "dependencies": {
-    "@hono/node-server": "^1.19.8",
+    "@hono/node-server": "^1.19.9",
     "@hono/zod-validator": "^0.7.6",
     "@vercel/postgres": "^0.10.0",
     "flowbite": "^4.0.1",
@@ -44,7 +44,7 @@
     "tailwindcss": "^4.1.18",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.53.0",
-    "vercel": "^50.3.0",
+    "vercel": "^50.3.2",
     "vite": "^7.3.1",
     "vite-plugin-solid": "^2.11.10",
     "vitest": "^4.0.17"
