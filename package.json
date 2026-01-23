@@ -19,7 +19,7 @@
     "@vercel/postgres": "^0.10.0",
     "flowbite": "^4.0.1",
     "hono": "^4.11.5",
-    "zod": "^4.3.5"
+    "zod": "^4.3.6"
   },
   "devDependencies": {
     "@eslint/compat": "^2.0.1",
@@ -44,10 +44,10 @@
     "tailwindcss": "^4.1.18",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.53.1",
-    "vercel": "^50.4.9",
+    "vercel": "^50.4.10",
     "vite": "^7.3.1",
     "vite-plugin-solid": "^2.11.10",
-    "vitest": "^4.0.17"
+    "vitest": "^4.0.18"
   },
   "engines": {
     "node": ">=22.x"
