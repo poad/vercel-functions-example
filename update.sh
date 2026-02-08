@@ -21,7 +21,7 @@ if [ $result -ne 0 ]; then
 fi
 echo ""
 pwd
-rm -rf node_modules && npx -y pnpm@latest self-update && pnpm install -r && pnpm up -r && pnpm audit --fix && pnpm up -r && pnpm -r --if-present build
+rm -rf node_modules && npx -y pnpm@latest self-update && pnpm install -r && pnpm up -r && pnpm audit --fix && pnpm up -r && pnpm -r --if-present blint-fixd && pnpm -r --if-present build
 result=$?
 if [ $result -ne 0 ]; then
   cd "${CUR}" || exit
