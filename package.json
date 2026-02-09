@@ -18,7 +18,7 @@
     "@hono/zod-validator": "^0.7.6",
     "@vercel/postgres": "^0.10.0",
     "flowbite": "^4.0.1",
-    "hono": "^4.11.8",
+    "hono": "^4.11.9",
     "zod": "^4.3.6"
   },
   "devDependencies": {
@@ -35,7 +35,7 @@
     "eslint-plugin-promise": "^7.2.1",
     "eslint-plugin-solid": "^0.14.5",
     "jsdom": "^28.0.0",
-    "pnpm": "^10.29.1",
+    "pnpm": "^10.29.2",
     "postcss": "^8.5.6",
     "solid-js": "^1.9.11",
     "tailwindcss": "^4.1.18",
