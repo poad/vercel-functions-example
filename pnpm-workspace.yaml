@@ -15,5 +15,8 @@ overrides:
   glob@>=10.3.7 <=11.0.3: '>=11.1.0'
   seroval@<1.4.1: '>=1.4.1'
   tar@<7.5.8: '>=7.5.8'
-  tar@<=7.5.2: '>=7.5.3'
   undici@<5.29.0: '>=5.29.0'
+  '@eslint/eslintrc>ajv': ^6.12.4
+  eslint>ajv: ^6.12.4
+  minimatch@<10.2.1: '>=10.2.1'
+  '@eslint/eslintrc>minimatch': '^3.1.2'
