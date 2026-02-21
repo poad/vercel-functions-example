@@ -52,8 +52,7 @@ export function TodoList(): JSX.Element {
     // eslint-disable-next-line promise/catch-or-return
     client.api.todo.$delete({ json: { id } }).then(() => refetch());
   }
-
-  let input!: HTMLInputElement;
+  const [value, setValue] = createSignal('');
   const addTodo = (text: string) => {
     setText(() => text);
   };
@@ -61,12 +60,12 @@ export function TodoList(): JSX.Element {
   return (
     <>
       <div>
-        <input placeholder="new todo here" ref={input} />
+        <input placeholder="new todo here" value={value()} />
         <button
           onClick={() => {
-            if (!input.value.trim()) return;
-            addTodo(input.value);
-            input.value = '';
+            if (!value().trim()) return;
+            addTodo(value());
+            setValue('');
           }}
         >
           Add Todo

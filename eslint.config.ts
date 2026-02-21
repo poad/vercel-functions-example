@@ -62,7 +62,6 @@ export default defineConfig(
     rules: {
       '@stylistic/semi' : ["error", "always"],
       '@stylistic/indent': ['error', 2],
-      '@stylistic/ts/indent': ['error', 2],
       '@stylistic/comma-dangle': ["error", "always-multiline"],
       '@stylistic/quotes': ["error", "single"],
     }

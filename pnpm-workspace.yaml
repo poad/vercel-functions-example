@@ -19,4 +19,4 @@ overrides:
   '@eslint/eslintrc>ajv': ^6.12.4
   eslint>ajv: ^6.12.4
   minimatch@<10.2.1: '>=10.2.1'
-  '@eslint/eslintrc>minimatch': '^3.1.2'
+  path-to-regexp: '>=6.3.0'
