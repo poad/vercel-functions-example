@@ -29,7 +29,7 @@
     "@tailwindcss/postcss": "^4.2.2",
     "@testing-library/jest-dom": "^6.9.1",
     "autoprefixer": "^10.4.27",
-    "eslint": "^10.0.3",
+    "eslint": "^10.1.0",
     "eslint-import-resolver-typescript": "^4.4.4",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-promise": "^7.2.1",
@@ -41,7 +41,7 @@
     "tailwindcss": "^4.2.2",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.57.1",
-    "vercel": "^50.34.2",
+    "vercel": "^50.35.0",
     "vite": "^8.0.1",
     "vite-plugin-solid": "^2.11.11",
     "vitest": "^4.1.0"
