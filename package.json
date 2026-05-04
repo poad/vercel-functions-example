@@ -19,7 +19,7 @@
     "@vercel/postgres": "^0.10.0",
     "flowbite": "^4.0.1",
     "hono": "^4.12.16",
-    "zod": "^4.4.1"
+    "zod": "^4.4.3"
   },
   "devDependencies": {
     "@eslint/compat": "^2.0.5",
@@ -29,7 +29,7 @@
     "@tailwindcss/postcss": "^4.2.4",
     "@testing-library/jest-dom": "^6.9.1",
     "autoprefixer": "^10.5.0",
-    "eslint": "^10.2.1",
+    "eslint": "^10.3.0",
     "eslint-import-resolver-typescript": "^4.4.4",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-promise": "^7.3.0",
@@ -41,7 +41,7 @@
     "tailwindcss": "^4.2.4",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.59.1",
-    "vercel": "^53.0.1",
+    "vercel": "^53.1.0",
     "vite": "^8.0.10",
     "vite-plugin-solid": "^2.11.12",
     "vitest": "^4.1.5"
