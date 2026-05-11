@@ -52,13 +52,13 @@ importers:
         specifier: ^2.1.0
         version: 2.1.0(eslint@10.3.0(jiti@2.7.0))
       '@eslint/js':
-        specifier: '>=10.0.0'
+        specifier: ^10.0.1
         version: 10.0.1(eslint@10.3.0(jiti@2.7.0))
       '@solidjs/testing-library':
         specifier: ^0.8.10
         version: 0.8.10(solid-js@1.9.12)
       '@stylistic/eslint-plugin':
-        specifier: '>=5.0.0'
+        specifier: ^5.10.0
         version: 5.10.0(eslint@10.3.0(jiti@2.7.0))
       '@tailwindcss/postcss':
         specifier: ^4.3.0
@@ -70,7 +70,7 @@ importers:
         specifier: ^10.5.0
         version: 10.5.0(postcss@8.5.14)
       eslint:
-        specifier: '>=10.0.0'
+        specifier: ^10.3.0
         version: 10.3.0(jiti@2.7.0)
       eslint-import-resolver-typescript:
         specifier: ^4.4.4
@@ -3036,11 +3036,6 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
-  semver@7.7.4:
-    resolution: {integrity: sha512-vFKC2IEtQnVhpT78h1Yp8wzwrf8CM+MzKMHGJZfBtzhZNycRFnXsHk6E5TxIkkMsgNS7mdX3AGB7x2QM2di4lA==}
-    engines: {node: '>=10'}
-    hasBin: true
-
   semver@7.8.0:
     resolution: {integrity: sha512-AcM7dV/5ul4EekoQ29Agm5vri8JNqRyj39o0qpX6vDF2GZrtutZl5RwgD1XnZjiTAfncsJhMI48QQH3sN87YNA==}
     engines: {node: '>=10'}
@@ -4461,7 +4456,7 @@ snapshots:
       '@typescript-eslint/visitor-keys': 8.59.2
       debug: 4.4.3
       minimatch: 10.2.5
-      semver: 7.7.4
+      semver: 7.8.0
       tinyglobby: 0.2.16
       ts-api-utils: 2.5.0(typescript@6.0.3)
       typescript: 6.0.3
@@ -5892,7 +5887,7 @@ snapshots:
 
   is-bun-module@2.0.0:
     dependencies:
-      semver: 7.7.4
+      semver: 7.8.0
 
   is-callable@1.2.7: {}
 
@@ -6644,8 +6639,6 @@ snapshots:
   semver@7.5.4:
     dependencies:
       lru-cache: 6.0.0
-
-  semver@7.7.4: {}
 
   semver@7.8.0: {}
 
