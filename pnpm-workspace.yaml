@@ -4,6 +4,11 @@ allowBuilds:
   unrs-resolver: false
   utf-8-validate: false
 
+minimumReleaseAgeExclude:
+  - h3@2.0.1
+  - h3@2.0.1-rc.15
+  - h3@2.0.1-rc.18
+
 onlyBuiltDependencies:
   - '@tailwindcss/oxide'
   - bufferutil
@@ -22,6 +27,11 @@ overrides:
   eslint: '>=10.0.0'
   eslint>ajv: ^6.12.4
   glob@>=10.3.7 <=11.0.3: '>=11.1.0'
+  h3@>=2.0.0 <=2.0.1-rc.14: ^2.0.1
+  h3@>=2.0.0-0 <2.0.1-rc.15: ^2.0.1-rc.15
+  h3@>=2.0.0-beta.0 <=2.0.1-rc.16: ^2.0.1
+  h3@>=2.0.0-beta.4 <2.0.1-rc.18: ^2.0.1-rc.18
+  h3@>=2.0.1-alpha.0 <=2.0.1-rc.16: ^2.0.1
   minimatch@<10.2.1: '>=10.2.1'
   path-to-regexp: '>=6.3.0'
   seroval@<1.4.1: '>=1.4.1'
