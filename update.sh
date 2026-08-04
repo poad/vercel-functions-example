@@ -21,9 +21,8 @@ if [ $result -ne 0 ]; then
 fi
 echo ""
 pwd
-rm -rf node_modules && npx -y pnpm@latest self-update && pnpm install -r && pnpm up -r && pnpm audit --fix override && pnpm up -r && pnpm -r --if-present lint-fix && pnpm -r --if-present build && pnpm install -r --no-frozen-lockfile
-result=$?
-if [ $result -ne 0 ]; then
+
+if ! (rm -rf node_modules && pnx pnpm@latest self-update && pnpm install -r && pnpm up -r && pnpm audit --fix override && pnpm up -r && pnpm -r --if-present lint-fix && pnpm -r --if-present build && pnpm install -r --no-frozen-lockfile); then
   cd "${CUR}" || exit
   exit $result
 fi
@@ -34,9 +33,8 @@ if [ $result -ne 0 ]; then
   cd "${CUR}" || exit
   exit $result
 fi
-git pull --prune && git commit -am "Bumps node modules" && git push
-result=$?
-if [ $result -ne 0 ]; then
+
+if ! (git pull --prune && git commit -am "Bumps node modules" && git push); then
   cd "${CUR}" || exit
   exit $result
 fi
