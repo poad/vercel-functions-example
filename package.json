@@ -22,7 +22,6 @@
     "zod": "^4.4.3"
   },
   "devDependencies": {
-    "@eslint/compat": "^2.1.0",
     "@eslint/js": "^10.0.1",
     "@solidjs/testing-library": "^0.8.10",
     "@stylistic/eslint-plugin": "^5.10.0",
@@ -51,7 +50,7 @@
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
-      "version": "^11.20.0",
+      "version": "^11.22.0",
       "onFail": "download"
     },
     "runtime": {
