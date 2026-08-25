@@ -4,11 +4,12 @@ import { zValidator } from '@hono/zod-validator';
 import { logger } from 'hono/logger';
 import { z } from 'zod';
 
-import { sql } from '@vercel/postgres';
+import { neon } from '@neondatabase/serverless';
 
 export const config = {
   runtime: 'edge',
 };
+const sql = neon(process.env.DATABASE_URL);
 
 interface Item { id: string, content: string }
 

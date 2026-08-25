@@ -4,13 +4,18 @@ updates:
     directory: /
     schedule:
       interval: daily
+      timezone: Asia/Tokyo
     allow:
       - dependency-type: all
-    cooldown:
-      default-days: 3
     rebase-strategy: auto
     assignees:
       - poad
+    cooldown:
+      default-days: 7
+    groups:
+      actions:
+        patterns:
+          - '*'
 
   - package-ecosystem: npm
     directory: '/'
