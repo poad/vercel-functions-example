@@ -15,11 +15,11 @@
   },
   "dependencies": {
     "@hono/node-server": "^2.1.1",
-    "@hono/zod-validator": "^0.9.0",
+    "@hono/zod-validator": "^0.9.1",
     "@neondatabase/serverless": "^1.1.0",
     "flowbite": "^4.0.2",
-    "hono": "^4.13.3",
-    "zod": "^4.4.3"
+    "hono": "^4.13.9",
+    "zod": "^4.6.5"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
@@ -28,22 +28,22 @@
     "@tailwindcss/postcss": "^4.3.3",
     "@testing-library/jest-dom": "^7.0.1",
     "@typescript/native": "npm:typescript@^7.0.2",
-    "autoprefixer": "^10.5.4",
-    "eslint": "^10.8.1",
+    "autoprefixer": "^10.6.1",
+    "eslint": "^10.11.0",
     "eslint-import-resolver-typescript": "^4.4.5",
     "eslint-plugin-import-x": "^4.17.1",
     "eslint-plugin-promise": "^7.3.0",
     "eslint-plugin-solid": "^0.15.0",
-    "jsdom": "^30.0.1",
-    "postcss": "^8.5.26",
+    "jsdom": "^30.1.1",
+    "postcss": "^8.5.28",
     "solid-js": "^1.9.15",
     "tailwindcss": "^4.3.3",
     "typescript": "npm:@typescript/typescript6@^6.0.2",
-    "typescript-eslint": "^8.67.0",
+    "typescript-eslint": "^8.70.1",
     "vercel": "~58.4.4",
-    "vite": "^8.2.1",
+    "vite": "^8.3.1",
     "vite-plugin-solid": "^2.11.14",
-    "vitest": "^4.1.10"
+    "vitest": "^4.1.11"
   },
   "engines": {
     "node": ">=24.x"
@@ -51,12 +51,12 @@
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
-      "version": "^11.24.0",
+      "version": "12.8.2",
       "onFail": "download"
     },
     "runtime": {
       "name": "node",
-      "version": "^24.19.0",
+      "version": "^24.21.0",
       "onFail": "download"
     }
   }
