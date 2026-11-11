@@ -180,10 +180,10 @@ importers:
     dependencies:
       '@hono/node-server':
         specifier: ^2.1.3
-        version: 2.1.3(hono@4.13.9)
+        version: 2.1.3(hono@4.13.11)
       '@hono/zod-validator':
         specifier: ^0.9.1
-        version: 0.9.1(hono@4.13.9)(zod@4.6.6)
+        version: 0.9.1(hono@4.13.11)(zod@4.6.6)
       '@neondatabase/serverless':
         specifier: ^1.1.0
         version: 1.1.0
@@ -191,8 +191,8 @@ importers:
         specifier: ^4.0.2
         version: 4.0.2
       hono:
-        specifier: ^4.13.9
-        version: 4.13.9
+        specifier: ^4.13.11
+        version: 4.13.11
       zod:
         specifier: ^4.6.6
         version: 4.6.6
@@ -2352,8 +2352,8 @@ packages:
     resolution: {integrity: sha512-T2UbfbBEF32wiepXIsMlTW9+dDYC6wMh/t/vYA4tuOMKqWz/n3vr1NFSxQiyP+zk2mXsoMA/i/7qV6LKut1t1A==}
     engines: {node: '>= 0.4'}
 
-  hono@4.13.9:
-    resolution: {integrity: sha512-7dMkQmZoC4E6F7AtaQSPhlWAdnBti+j7rreMZl8QB4jFiEhP9TWbGWUMi8WYzBCgmgulxuvLQupKqo+Co6Omyg==}
+  hono@4.13.11:
+    resolution: {integrity: sha512-/SMX/RQNJn7oNmFwH6DtwDqcrzZU2otm1FD6OJe2cWF6cfy/F8hq0XVBv7xW3FTJshRQwuBnXHDq2kNsdZnshg==}
     engines: {node: '>=16.9.0'}
 
   hookified@1.15.1:
@@ -3956,13 +3956,13 @@ snapshots:
 
   '@exodus/bytes@1.16.0': {}
 
-  '@hono/node-server@2.1.3(hono@4.13.9)':
+  '@hono/node-server@2.1.3(hono@4.13.11)':
     dependencies:
-      hono: 4.13.9
+      hono: 4.13.11
 
-  '@hono/zod-validator@0.9.1(hono@4.13.9)(zod@4.6.6)':
+  '@hono/zod-validator@0.9.1(hono@4.13.11)(zod@4.6.6)':
     dependencies:
-      hono: 4.13.9
+      hono: 4.13.11
       zod: 4.6.6
 
   '@humanfs/core@0.19.2':
@@ -5616,7 +5616,7 @@ snapshots:
     dependencies:
       function-bind: 1.1.2
 
-  hono@4.13.9: {}
+  hono@4.13.11: {}
 
   hookified@1.15.1: {}
 
