@@ -4,10 +4,7 @@
     "target": "ESNext",
     "module": "ESNext",
     "moduleResolution": "bundler",
-    "lib": [
-      "DOM",
-      "ESNext"
-    ],
+    "lib": ["DOM", "ESNext"],
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "jsx": "preserve",
@@ -17,9 +14,7 @@
     "isolatedModules": true,
     "skipLibCheck": true,
     "paths": {
-      "~/*": [
-        "./*"
-      ]
-    },
+      "~/*": ["./*"]
+    }
   }
 }

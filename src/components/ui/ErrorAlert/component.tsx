@@ -1,8 +1,8 @@
-import { JSX, Show } from "solid-js"
+import { JSX, Show } from 'solid-js';
 
 export function ErrorAlert(props: {
-  title?: string
-  children: JSX.Element
+  title?: string;
+  children: JSX.Element;
 }): JSX.Element {
   return (
     <div
@@ -14,5 +14,5 @@ export function ErrorAlert(props: {
       </Show>
       {props.children}
     </div>
-  )
+  );
 }

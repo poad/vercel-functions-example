@@ -1,5 +1,5 @@
-import styles from "./styles.module.css"
+import styles from './styles.module.css';
 
 export function FadeLoader() {
-  return <div class={styles.loader} />
+  return <div class={styles.loader} />;
 }

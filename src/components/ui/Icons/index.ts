@@ -1,1 +1,1 @@
-export * from "./TrashBin"
+export * from './TrashBin';

@@ -1,3 +1,9 @@
+import type { AppType } from '../api/';
+import { ErrorAlert } from './components/ui/ErrorAlert';
+import { FadeLoader } from './components/ui/FadeLoader';
+import { TrashBinIcon } from './components/ui/Icons/TrashBin';
+
+import { hc } from 'hono/client';
 import {
   ErrorBoundary,
   For,
@@ -6,20 +12,15 @@ import {
   Suspense,
   createResource,
   createSignal,
-} from "solid-js"
-import { hc } from "hono/client"
-import { FadeLoader } from "./components/ui/FadeLoader"
-import { ErrorAlert } from "./components/ui/ErrorAlert"
-import { TrashBinIcon } from "./components/ui/Icons/TrashBin"
-import type { AppType } from "../api/"
+} from 'solid-js';
 
 function Message() {
-  const client = hc<AppType>("/")
+  const client = hc<AppType>('/');
   const [data] = createResource<{ message: string }>(() =>
     client.api.hello
-      .$post({ json: { message: "Hono" } })
+      .$post({ json: { message: 'Hono' } })
       .then((res) => res.json()),
-  )
+  );
   return (
     <ErrorBoundary fallback={<ErrorAlert>{data.error}</ErrorAlert>}>
       <Suspense fallback={<div>loading...</div>}>
@@ -28,34 +29,34 @@ function Message() {
         </Show>
       </Suspense>
     </ErrorBoundary>
-  )
+  );
 }
 
 export function TodoList(): JSX.Element {
-  const client = hc<AppType>("/")
+  const client = hc<AppType>('/');
   const [data, { refetch }] = createResource<{
-    items: { id: string, content: string }[]
-  }>(() => client.api.todo.$get().then((res) => res.json()))
+    items: { id: string; content: string }[];
+  }>(() => client.api.todo.$get().then((res) => res.json()));
 
-  const [text, setText] = createSignal<string>()
+  const [text, setText] = createSignal<string>();
 
   createResource(text, (text?: string) => {
-    if (!text) return
+    if (!text) return;
     // eslint-disable-next-line promise/catch-or-return, promise/always-return
     client.api.todo.$put({ json: { content: text } }).then(async () => {
-      refetch()
-    })
-  })
+      refetch();
+    });
+  });
 
   async function deleteTodo(id: string) {
-    if (!id) return
+    if (!id) return;
     // eslint-disable-next-line promise/catch-or-return
-    client.api.todo.$delete({ json: { id } }).then(() => refetch())
+    client.api.todo.$delete({ json: { id } }).then(() => refetch());
   }
-  const [value, setValue] = createSignal("")
+  const [value, setValue] = createSignal('');
   const addTodo = (text: string) => {
-    setText(() => text)
-  }
+    setText(() => text);
+  };
 
   return (
     <>
@@ -63,9 +64,9 @@ export function TodoList(): JSX.Element {
         <input placeholder="new todo here" value={value()} />
         <button
           onClick={() => {
-            if (!value().trim()) return
-            addTodo(value())
-            setValue("")
+            if (!value().trim()) return;
+            addTodo(value());
+            setValue('');
           }}
         >
           Add Todo
@@ -88,10 +89,10 @@ export function TodoList(): JSX.Element {
               <For each={data()?.items}>
                 {(item) => (
                   <li>
-                    {item.content}{" "}
+                    {item.content}{' '}
                     <button
                       onClick={async () => {
-                        await deleteTodo(item.id)
+                        await deleteTodo(item.id);
                       }}
                     >
                       <TrashBinIcon />
@@ -104,5 +105,5 @@ export function TodoList(): JSX.Element {
         </Suspense>
       </ErrorBoundary>
     </>
-  )
+  );
 }
