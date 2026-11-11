@@ -19,7 +19,7 @@
     "@neondatabase/serverless": "^1.1.0",
     "flowbite": "^4.0.2",
     "hono": "^4.13.9",
-    "zod": "^4.6.5"
+    "zod": "^4.6.6"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
