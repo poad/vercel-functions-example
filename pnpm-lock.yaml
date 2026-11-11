@@ -183,7 +183,7 @@ importers:
         version: 2.1.3(hono@4.13.9)
       '@hono/zod-validator':
         specifier: ^0.9.1
-        version: 0.9.1(hono@4.13.9)(zod@4.6.5)
+        version: 0.9.1(hono@4.13.9)(zod@4.6.6)
       '@neondatabase/serverless':
         specifier: ^1.1.0
         version: 1.1.0
@@ -194,8 +194,8 @@ importers:
         specifier: ^4.13.9
         version: 4.13.9
       zod:
-        specifier: ^4.6.5
-        version: 4.6.5
+        specifier: ^4.6.6
+        version: 4.6.6
     devDependencies:
       '@eslint/js':
         specifier: ^10.0.1
@@ -3635,8 +3635,8 @@ packages:
   zod@4.1.11:
     resolution: {integrity: sha512-WPsqwxITS2tzx1bzhIKsEs19ABD5vmCVa4xBo2tq/SrV4RNZtfws1EnCWQXM6yh8bD08a1idvkB5MZSBiZsjwg==}
 
-  zod@4.6.5:
-    resolution: {integrity: sha512-v5l/aFXZQeai4awLbOpSoHecE9UiMrnfx75tEXLjNonXVARxQ5mOeipTjROUchszUNCqnE+hqAMujRsRHsut2Q==}
+  zod@4.6.6:
+    resolution: {integrity: sha512-4UmzQUF5fxvfcYHlbjBmejU+w+hbDnWFx4aS8kBx7nPBHcO2SqPbpAG8snbdg+Xse4pRefR98hgjFgIMCI/UhA==}
 
 snapshots:
 
@@ -3960,10 +3960,10 @@ snapshots:
     dependencies:
       hono: 4.13.9
 
-  '@hono/zod-validator@0.9.1(hono@4.13.9)(zod@4.6.5)':
+  '@hono/zod-validator@0.9.1(hono@4.13.9)(zod@4.6.6)':
     dependencies:
       hono: 4.13.9
-      zod: 4.6.5
+      zod: 4.6.6
 
   '@humanfs/core@0.19.2':
     dependencies:
@@ -4972,7 +4972,7 @@ snapshots:
       tar-stream: 3.1.7
       undici: 8.11.2
       xdg-app-paths: 5.1.0
-      zod: 4.6.5
+      zod: 4.6.6
     transitivePeerDependencies:
       - bare-abort-controller
       - react-native-b4a
@@ -6218,7 +6218,7 @@ snapshots:
       async-retry: 1.3.3
       debug: 4.4.3
       ws: 8.21.3
-      zod: 4.6.5
+      zod: 4.6.6
     transitivePeerDependencies:
       - bare-abort-controller
       - bufferutil
@@ -6691,4 +6691,4 @@ snapshots:
 
   zod@4.1.11: {}
 
-  zod@4.6.5: {}
+  zod@4.6.6: {}
