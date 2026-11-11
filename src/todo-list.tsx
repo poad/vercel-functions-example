@@ -1,3 +1,9 @@
+import type { AppType } from '../api/';
+import { ErrorAlert } from './components/ui/ErrorAlert';
+import { FadeLoader } from './components/ui/FadeLoader';
+import { TrashBinIcon } from './components/ui/Icons/TrashBin';
+
+import { hc } from 'hono/client';
 import {
   ErrorBoundary,
   For,
@@ -7,11 +13,6 @@ import {
   createResource,
   createSignal,
 } from 'solid-js';
-import { hc } from 'hono/client';
-import { FadeLoader } from './components/ui/FadeLoader';
-import { ErrorAlert } from './components/ui/ErrorAlert';
-import { TrashBinIcon } from './components/ui/Icons/TrashBin';
-import type { AppType } from '../api/';
 
 function Message() {
   const client = hc<AppType>('/');

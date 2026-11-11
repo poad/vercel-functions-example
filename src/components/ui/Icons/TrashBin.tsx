@@ -1,6 +1,4 @@
-import {
-  JSX,
-} from 'solid-js';
+import { JSX } from 'solid-js';
 
 export function TrashBinIcon(): JSX.Element {
   return (

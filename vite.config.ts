@@ -1,5 +1,5 @@
-import { defineConfig } from 'vitest/config';
 import solidPlugin from 'vite-plugin-solid';
+import { defineConfig } from 'vitest/config';
 
 export default defineConfig({
   plugins: [
@@ -30,5 +30,5 @@ export default defineConfig({
   },
   resolve: {
     conditions: ['development', 'browser'],
-  }
+  },
 });
