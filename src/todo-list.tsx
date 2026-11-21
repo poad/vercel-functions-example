@@ -1,72 +1,76 @@
-import type { AppType } from '../api/';
-import { ErrorAlert } from './components/ui/ErrorAlert';
-import { FadeLoader } from './components/ui/FadeLoader';
-import { TrashBinIcon } from './components/ui/Icons/TrashBin';
+import type { AppType } from '../api/index.js';
+import { ErrorAlert } from './components/ui/ErrorAlert/index.js';
+import { FadeLoader } from './components/ui/FadeLoader/index.js';
+import { TrashBinIcon } from './components/ui/Icons/index.js';
 
+import type { JSX } from '@solidjs/web';
 import { hc } from 'hono/client';
 import {
-  ErrorBoundary,
+  Errored,
   For,
-  JSX,
-  Show,
-  Suspense,
-  createResource,
+  Loading,
+  createMemo,
   createSignal,
+  refresh,
 } from 'solid-js';
 
 function Message() {
   const client = hc<AppType>('/');
-  const [data] = createResource<{ message: string }>(() =>
-    client.api.hello
-      .$post({ json: { message: 'Hono' } })
-      .then((res) => res.json()),
+  const data = createMemo(
+    async () =>
+      await client.api.hello
+        .$post({ json: { message: 'Hono' } })
+        .then(async (res) => res.json()),
   );
+  const message = createMemo(() => {
+    const result = data();
+    return 'message' in result ? result.message : result.error.message;
+  });
   return (
-    <ErrorBoundary fallback={<ErrorAlert>{data.error}</ErrorAlert>}>
-      <Suspense fallback={<div>loading...</div>}>
-        <Show when={!data.loading && data()}>
-          <span>{data()?.message}</span>
-        </Show>
-      </Suspense>
-    </ErrorBoundary>
+    <Loading fallback={<div>loading...</div>}>
+      <Errored
+        fallback={(error) => (
+          <ErrorAlert>{(error() as { message: string }).message}</ErrorAlert>
+        )}
+      >
+        <span>{message()}</span>
+      </Errored>
+    </Loading>
   );
 }
 
 export function TodoList(): JSX.Element {
   const client = hc<AppType>('/');
-  const [data, { refetch }] = createResource<{
+  const data = createMemo<{
     items: { id: string; content: string }[];
   }>(() => client.api.todo.$get().then((res) => res.json()));
 
-  const [text, setText] = createSignal<string>();
-
-  createResource(text, (text?: string) => {
-    if (!text) return;
-    // eslint-disable-next-line promise/catch-or-return, promise/always-return
-    client.api.todo.$put({ json: { content: text } }).then(async () => {
-      refetch();
-    });
-  });
-
   async function deleteTodo(id: string) {
     if (!id) return;
-    // eslint-disable-next-line promise/catch-or-return
-    client.api.todo.$delete({ json: { id } }).then(() => refetch());
+    await client.api.todo.$delete({ json: { id } });
+    await refresh(data);
   }
+
   const [value, setValue] = createSignal('');
-  const addTodo = (text: string) => {
-    setText(() => text);
-  };
+  async function addTodo(content: string) {
+    await client.api.todo.$put({ json: { content } });
+    setValue('');
+    await refresh(data);
+  }
 
   return (
     <>
       <div>
-        <input placeholder="new todo here" value={value()} />
+        <input
+          placeholder="new todo here"
+          value={value()}
+          onInput={(event) => setValue(event.currentTarget.value)}
+        />
         <button
           onClick={() => {
-            if (!value().trim()) return;
-            addTodo(value());
-            setValue('');
+            const content = value().trim();
+            if (!content) return;
+            void addTodo(content);
           }}
         >
           Add Todo
@@ -76,34 +80,36 @@ export function TodoList(): JSX.Element {
         <Message />
       </p>
 
-      <ErrorBoundary fallback={<ErrorAlert>{data.error}</ErrorAlert>}>
-        <Suspense
+      <Errored
+        fallback={(error) => (
+          <ErrorAlert>{(error() as { message: string }).message}</ErrorAlert>
+        )}
+      >
+        <Loading
           fallback={
             <div>
               <FadeLoader />
             </div>
           }
         >
-          <Show when={!data.loading && data()}>
-            <ul>
-              <For each={data()?.items}>
-                {(item) => (
-                  <li>
-                    {item.content}{' '}
-                    <button
-                      onClick={async () => {
-                        await deleteTodo(item.id);
-                      }}
-                    >
-                      <TrashBinIcon />
-                    </button>
-                  </li>
-                )}
-              </For>
-            </ul>
-          </Show>
-        </Suspense>
-      </ErrorBoundary>
+          <ul>
+            <For each={data().items}>
+              {(item) => (
+                <li>
+                  {item.content}{' '}
+                  <button
+                    onClick={async () => {
+                      await deleteTodo(item.id);
+                    }}
+                  >
+                    <TrashBinIcon />
+                  </button>
+                </li>
+              )}
+            </For>
+          </ul>
+        </Loading>
+      </Errored>
     </>
   );
 }
