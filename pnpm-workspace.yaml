@@ -13,8 +13,22 @@ minimumReleaseAge: 10080 # 7 days in minutes
 minimumReleaseAgeExclude:
   - pnpm@12.21.0
 
+  - '@solidjs/babel-plugin@2.0.0'
+  - '@solidjs/compiler-darwin-arm64@2.0.0'
+  - '@solidjs/compiler-darwin-x64@2.0.0'
+  - '@solidjs/compiler-linux-arm64-gnu@2.0.0'
+  - '@solidjs/compiler-linux-x64-gnu@2.0.0'
+  - '@solidjs/compiler-wasm32-wasi@2.0.0'
+  - '@solidjs/compiler-win32-x64-msvc@2.0.0'
+  - '@solidjs/compiler@2.0.0'
+  - '@solidjs/web@2.0.0 || 2.0.3'
+  - '@solidjs/signals@2.0.3'
+  - solid-js@2.0.3
+  - eslint-plugin-solid@0.20.0
+  - '@solidjs/router@2.0.0'
+  - '@solidjs/vite-plugin@3.0.1'
+
 overrides:
-  '@tootallnate/once@<2.0.1': ^2.0.1
   ajv@>=7.0.0-alpha.0 <8.18.0: ^8.18.0
   glob@>=9.0.0 <=14.0.1: ^14.0.2
   js-yaml@>=4.0.0 <4.3.2: ^4.3.2
@@ -28,3 +42,6 @@ overrides:
   zod@<4.6.6: ^4.6.6
 
 trustPolicy: no-downgrade
+trustPolicyExclude:
+  - vercel@65.16.0
+  - '@vercel/*'

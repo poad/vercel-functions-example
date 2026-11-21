@@ -8,7 +8,7 @@ import { z } from 'zod';
 export const config = {
   runtime: 'edge',
 };
-const sql = neon(process.env.DATABASE_URL);
+const sql = neon(import.meta.env.DATABASE_URL);
 
 interface Item {
   id: string;
@@ -16,8 +16,8 @@ interface Item {
 }
 
 async function todoList(c: Context<object, '/', object>) {
-  const { rows } = await sql<Item>`SELECT * FROM todos ORDER BY createdAt`;
-  const items = rows.map((row: Item) => {
+  const rows = await sql`SELECT * FROM todos ORDER BY createdAt`;
+  const items = rows.map((row) => {
     return {
       id: row.id,
       content: row.content,
@@ -45,9 +45,8 @@ async function createTodo(
   >,
 ) {
   const { content } = c.req.valid('json');
-  const result =
-    await sql<Item>`INSERT INTO todos (content) VALUES (${content})`;
-  const items = result.rows.map((row: Item) => {
+  const result = await sql`INSERT INTO todos (content) VALUES (${content})`;
+  const items = result.map((row) => {
     return {
       id: row.id,
       content: row.content,
@@ -75,7 +74,7 @@ async function deleteTodo(
   >,
 ) {
   const { id } = c.req.valid('json');
-  const { rows } = await sql<Item>`DELETE FROM todos where id = ${id}`;
+  const rows = await sql`DELETE FROM todos where id = ${id}`;
   if (rows.length > 1) {
     return c.json({ message: 'Too Many match by ID' }, 400);
   }

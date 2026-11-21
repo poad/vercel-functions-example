@@ -1,4 +1,4 @@
-import { TodoList } from './todo-list';
+import { TodoList } from './todo-list.jsx';
 
 import type { Component } from 'solid-js';
 
